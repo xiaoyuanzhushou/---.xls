@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorlist1">#CCFFFF</color>
+    <color name="colorTitle">#99CCFF</color>
+    <color name="colorMiddle">#FFFFCC</color>
+    <color name="colorLow">#CCFF99</color>
+    <color name="colorHigh">#FF6666</color>
+
+//番茄钟
+    <color name="colorBackground">#3F51B5</color>
+    <color name="colorText">#ffffff</color>
+
+</resources>
