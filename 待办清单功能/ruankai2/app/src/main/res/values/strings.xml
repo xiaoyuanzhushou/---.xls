@@ -1,0 +1,26 @@
+<resources>
+    <!-- Global -->
+    <string name="app_name">TODO</string>
+
+    <!-- Main -->
+    <string name="action_settings">设置</string>
+    <string name="action_debug">Debug</string>
+    <string name="action_database">Database</string>
+
+    <!-- Debug -->
+    <string name="print_absolute_path">Print absolute path</string>
+    <string name="request_storage_permission">Request Storage Permission</string>
+    <string name="write_to_file">Write to files</string>
+    <string name="write_to_file_hint">Display your content here</string>
+
+    <!-- Note -->
+    <string name="take_a_note">Take a note</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- button -->
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_resume">继续</string>
+    <string name="btn_stop">放弃</string>
+    <string name="btn_skip">略过</string>
+</resources>
