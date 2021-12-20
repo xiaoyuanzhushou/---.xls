@@ -6,6 +6,7 @@
     <string name="action_settings">设置</string>
     <string name="action_debug">Debug</string>
     <string name="action_database">Database</string>
+    <string name="action_TomatoClock">番茄钟</string>
 
     <!-- Debug -->
     <string name="print_absolute_path">Print absolute path</string>
@@ -23,4 +24,8 @@
     <string name="btn_resume">继续</string>
     <string name="btn_stop">放弃</string>
     <string name="btn_skip">略过</string>
+
+    <string name="scene_work">工作</string>
+    <string name="scene_short_break">短时休息</string>
+    <string name="scene_long_break">长时休息</string>
 </resources>

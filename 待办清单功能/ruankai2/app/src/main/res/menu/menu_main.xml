@@ -9,6 +9,10 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
+        android:id="@+id/action_TomatoClock"
+        android:orderInCategory="105"
+        android:title="@string/action_TomatoClock" />
+    <item
         android:id="@+id/action_debug"
         android:orderInCategory="104"
         android:title="@string/action_debug"

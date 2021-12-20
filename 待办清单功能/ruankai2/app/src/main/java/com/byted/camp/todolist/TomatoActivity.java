@@ -1,14 +1,19 @@
 package com.byted.camp.todolist;
 
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.SystemClock;
-import android.preference.PreferenceManager;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
-import java.util.concurrent.TimeUnit;
+import com.byted.camp.todolist.widget.RippleWrapper;
+import com.byted.camp.todolist.widget.TickProgressBar;
 
 public class TomatoActivity extends AppCompatActivity {
     public static final int DEFAULT_WORK_LENGTH = 25;
@@ -34,6 +39,25 @@ public class TomatoActivity extends AppCompatActivity {
     private int mTimes;
     private int mState;
 
+
+
+
+
+
+
+    private MenuItem mMenuItemIDLE;
+    private Button mBtnStart;
+    private Button mBtnPause;
+    private Button mBtnResume;
+    private Button mBtnStop;
+    private Button mBtnSkip;
+    private TextView tv;
+    private MyCountDownTimer mc;
+    private TickProgressBar mProgressBar;
+    private RippleWrapper mRippleWrapper;
+    private long mLastClickTime = 0;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tomato);
@@ -49,131 +73,99 @@ public class TomatoActivity extends AppCompatActivity {
         ImageButton couch = findViewById(R.id.imageButton_couch);
         couch.setBackgroundColor(Color.TRANSPARENT);
 
+        mBtnStart = (Button)findViewById(R.id.btn_start);
+        mBtnPause = (Button)findViewById(R.id.btn_pause);
+        mBtnResume = (Button)findViewById(R.id.btn_resume);
+        mBtnStop = (Button)findViewById(R.id.btn_stop);
+        mBtnSkip = (Button)findViewById(R.id.btn_skip);
+
+        //tv = (TextView)findViewById(R.id.text_time_title);
+        mProgressBar = (TickProgressBar)findViewById(R.id.tick_progress_bar);
+        mRippleWrapper = (RippleWrapper)findViewById(R.id.ripple_wrapper);
+
+        tv = (TextView)findViewById(R.id.text_count_down);
+
+        initActions();
+
+
+
     }
 
-    public void reload() {
-        switch(mState) {
-            case STATE_WAIT:
-            case STATE_FINISH:
-                mMillisInTotal = TimeUnit.MINUTES.toMillis(getMinutesInTotal());
-                mMillisUntilFinished = mMillisInTotal;
-                break;
-            case STATE_RUNNING:
-                if (SystemClock.elapsedRealtime() > mStopTimeInFuture) {
-                    finish();
-                }
-                break;
-        }
-    }
-    /*
-    public void start() {
-        setState(STATE_RUNNING);
-        mStopTimeInFuture = SystemClock.elapsedRealtime() + mMillisInTotal;
-    }
+    private void initActions() {
+        mBtnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //new对象，传入要停留的时间
 
-    public void pause() {
-        setState(STATE_PAUSE);
-        mMillisUntilFinished = mStopTimeInFuture - SystemClock.elapsedRealtime();
-    }
+                mc = new MyCountDownTimer(1500000,1000);
+                //开始倒计时
+                mc.start();
+            }
+        });
 
-    public void resume() {
-        setState(STATE_RUNNING);
-        mStopTimeInFuture = SystemClock.elapsedRealtime() + mMillisUntilFinished;
-    }
+        mBtnPause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-    public void stop() {
-        setState(STATE_WAIT);
-        reload();
-    }
+            }
+        });
 
-    public void skip() {
-        setState(STATE_WAIT);
-        setTimes();
-        reload();
-    }
+        mBtnResume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-    public void finish() {
-        setState(STATE_FINISH);
-        setTimes();
-        reload();
+            }
+        });
+
+        mBtnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        mBtnSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
-    public void exit() {
-        setState(STATE_WAIT);
-        mTimes = 0;
-        reload();
-    }
-
-    public int getState() {
-        return mState;
-    }
-
-    public void setState(int state) {
-        mState = state;
-    }
-
-    private void setTimes() {
-        mTimes++; // 注意这里不能在 activity 中使用, 如果睡眠中就不能保证会运行
-    }
-
-    */
-    public int getScene() {
-        int frequency = getSharedPreferences()
-                .getInt("pref_key_long_break_frequency", DEFAULT_LONG_BREAK_FREQUENCY);
-        frequency = frequency * 2; // 工作/短休息/工作/短休息/工作/短休息/工作/长休息
-
-        if (mTimes % 2  == 1) { // 偶数：工作, 奇数：休息
-
-            if ((mTimes + 1 ) % frequency == 0) { // 长休息
-                return SCENE_LONG_BREAK;
+        class MyCountDownTimer extends CountDownTimer {
+            /**
+             *
+             * @param millisInFuture
+             *      表示以毫秒为单位 倒计时的总数
+             *
+             *      例如 millisInFuture=1000 表示1秒
+             *
+             * @param countDownInterval
+             *      表示 间隔 多少微秒 调用一次 onTick 方法
+             *
+             *      例如: countDownInterval =1000 ; 表示每1000毫秒调用一次onTick()
+             *
+             */
+            public MyCountDownTimer(long millisInFuture, long countDownInterval) {
+                super(millisInFuture, countDownInterval);
             }
 
-            return SCENE_SHORT_BREAK;
+            @Override
+            public void onFinish() {
+                tv.setText("done");
+            }
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+                String secondsPart;
+                Log.i("MainActivity", millisUntilFinished + "");
+                if(millisUntilFinished / 1000 % 60 < 10) {
+                    secondsPart = "0" + millisUntilFinished / 1000 % 60 ;
+                }else{
+                    secondsPart = String.valueOf(millisUntilFinished / 1000 % 60 );
+                }
+                tv.setText(""+millisUntilFinished / 1000 / 60 +":"+ secondsPart );
+            }
         }
-
-        return SCENE_WORK;
-    }
-
-        public int getMinutesInTotal() {
-        int minutes = 0;
-
-        switch (getScene()) {
-            case SCENE_WORK:
-                minutes = getSharedPreferences()
-                        .getInt("pref_key_work_length", DEFAULT_WORK_LENGTH);
-                break;
-            case SCENE_SHORT_BREAK:
-                minutes = getSharedPreferences()
-                        .getInt("pref_key_short_break", DEFAULT_SHORT_BREAK);
-                break;
-            case SCENE_LONG_BREAK:
-                minutes = getSharedPreferences()
-                        .getInt("pref_key_long_break", DEFAULT_LONG_BREAK);
-                break;
-        }
-
-        return minutes;
-    }
-
-    public long getMillisInTotal() {
-        return mMillisInTotal;
-    }
-
-    public void setMillisUntilFinished(long millisUntilFinished) {
-        mMillisUntilFinished = millisUntilFinished;
-    }
-
-    public long getMillisUntilFinished() {
-        if (mState == STATE_RUNNING) {
-            return mStopTimeInFuture - SystemClock.elapsedRealtime();
-        }
-
-        return mMillisUntilFinished;
-    }
-
-    private SharedPreferences getSharedPreferences() {
-        return PreferenceManager.getDefaultSharedPreferences(this);
-    }
-
 
 }

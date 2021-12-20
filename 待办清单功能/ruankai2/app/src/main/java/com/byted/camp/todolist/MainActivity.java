@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.baseToolbar);
         setSupportActionBar(toolbar);
+        //设置Toolbar中的标题颜色
         toolbar.setTitleTextColor(getResources().getColor(colorTitle));
 
         //创建数据库
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //番茄图标监听器
+        /*
         ImageButton Tom = findViewById(R.id.tomatoClock);
         Tom.setBackgroundColor(Color.TRANSPARENT);
         Tom.setOnClickListener(new View.OnClickListener() {
@@ -87,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 );
             }
         });
-
+    */
         //待办事项栏
         recyclerView = findViewById(R.id.list_todo);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,
@@ -154,12 +156,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(new Intent(MainActivity.this, SettingActivity.class),
                         REQUEST_CODE_SORT);
                 return true;
-            case R.id.action_debug:
-                startActivity(new Intent(this, DebugActivity.class));
+            case R.id.action_TomatoClock:
+                startActivity(new Intent(this,TomatoActivity.class));
                 return true;
-            case R.id.action_database:
-                startActivity(new Intent(this, DatabaseActivity.class));
-                return true;
+                //case R.id.action_debug:
+            //    startActivity(new Intent(this, DebugActivity.class));
+            //    return true;
+            //case R.id.action_database:
+            //    startActivity(new Intent(this, DatabaseActivity.class));
+            //    return true;
+
             default:
                 break;
         }

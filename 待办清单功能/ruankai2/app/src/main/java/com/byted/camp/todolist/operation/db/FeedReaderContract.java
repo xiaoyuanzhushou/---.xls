@@ -13,8 +13,8 @@ public class FeedReaderContract {
 
     public static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;
 
-    // To prevent someone from accidentally instantiating the contract class,
-    // make the constructor private.
+    // 防止有人不慎将抽象类实例化
+    // 将构造方法设置成private
     private FeedReaderContract() {
     }
 
