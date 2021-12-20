@@ -42,4 +42,28 @@ class Database9 {
             t[7]* ln(Q[7])+t[8]* ln(Q[8])+t[9]* ln(Q[9])
 
     var R: Double = (averaget29-averaget9*averaget9)/(C*(averagetlnQ*tlnQ))
+
+    constructor(
+        C: Double,
+        U: Double,
+        Q0: Double,
+        t: Array<Double>,
+        Q: Array<Double>,
+        averaget9: Double,
+        averaget29: Double,
+        averagetlnQ: Double,
+        tlnQ: Double,
+        R: Double
+    ) {
+        this.C = C
+        this.U = U
+        this.Q0 = Q0
+        this.t = t
+        this.Q = Q
+        this.averaget9 = averaget9
+        this.averaget29 = averaget29
+        this.averagetlnQ = averagetlnQ
+        this.tlnQ = tlnQ
+        this.R = R
+    }
 }

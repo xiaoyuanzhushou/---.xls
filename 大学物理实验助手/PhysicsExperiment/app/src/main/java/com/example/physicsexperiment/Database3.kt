@@ -135,4 +135,64 @@ class Database3 {
      * UA-合成不确定度
      */
     var uCUA3: Double = sqrt(uAUA3*uAUA3 + uBUA3*uBUA3)
+
+    constructor(
+        I1: Array<Double>,
+        U1: Array<Double>,
+        averageI1: Double,
+        deltaI1: Array<Double>,
+        averageU1: Double,
+        deltaU1: Array<Double>,
+        I2: Array<Double>,
+        UA: Array<Double>,
+        averageI2: Double,
+        deltaI2: Array<Double>,
+        averageUA: Double,
+        deltaUA: Array<Double>,
+        temI13: Double,
+        uAI13: Double,
+        uBI13: Double,
+        uCI13: Double,
+        temU13: Double,
+        uAU13: Double,
+        uBU13: Double,
+        uCU13: Double,
+        temI23: Double,
+        uAI23: Double,
+        uBI23: Double,
+        uCI23: Double,
+        temUA3: Double,
+        uAUA3: Double,
+        uBUA3: Double,
+        uCUA3: Double
+    ) {
+        this.I1 = I1
+        this.U1 = U1
+        this.averageI1 = averageI1
+        this.deltaI1 = deltaI1
+        this.averageU1 = averageU1
+        this.deltaU1 = deltaU1
+        this.I2 = I2
+        this.UA = UA
+        this.averageI2 = averageI2
+        this.deltaI2 = deltaI2
+        this.averageUA = averageUA
+        this.deltaUA = deltaUA
+        this.temI13 = temI13
+        this.uAI13 = uAI13
+        this.uBI13 = uBI13
+        this.uCI13 = uCI13
+        this.temU13 = temU13
+        this.uAU13 = uAU13
+        this.uBU13 = uBU13
+        this.uCU13 = uCU13
+        this.temI23 = temI23
+        this.uAI23 = uAI23
+        this.uBI23 = uBI23
+        this.uCI23 = uCI23
+        this.temUA3 = temUA3
+        this.uAUA3 = uAUA3
+        this.uBUA3 = uBUA3
+        this.uCUA3 = uCUA3
+    }
 }

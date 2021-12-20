@@ -50,4 +50,34 @@ class Database12 {
     var lambda: Double = (averaged*deltaX)/averageD
 
     var E: Double = 0.000000
+
+    constructor(
+        d1: Array<Double>,
+        L: Array<Double>,
+        d2: Array<Double>,
+        deltaX1: Double,
+        deltaX11: Double,
+        averaged1: Double,
+        averageL: Double,
+        averaged2: Double,
+        averaged: Double,
+        averageD: Double,
+        deltaX: Double,
+        lambda: Double,
+        E: Double
+    ) {
+        this.d1 = d1
+        this.L = L
+        this.d2 = d2
+        this.deltaX1 = deltaX1
+        this.deltaX11 = deltaX11
+        this.averaged1 = averaged1
+        this.averageL = averageL
+        this.averaged2 = averaged2
+        this.averaged = averaged
+        this.averageD = averageD
+        this.deltaX = deltaX
+        this.lambda = lambda
+        this.E = E
+    }
 }

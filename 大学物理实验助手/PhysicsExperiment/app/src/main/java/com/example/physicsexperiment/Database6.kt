@@ -202,4 +202,147 @@ class Database6 {
 
     var uRJa6: Double = uCJa6/averageJa
 
+    constructor(
+        H: Array<Double>,
+        d1: Array<Double>,
+        d2: Array<Double>,
+        m0: Double,
+        T0: Double,
+        T1: Array<Double>,
+        D1: Double,
+        D2: Double,
+        m1: Double,
+        a: Double,
+        dx: Double,
+        m: Double,
+        Ta: Double,
+        averaged1: Double,
+        averaged2: Double,
+        averageT1: Double,
+        averageH: Double,
+        averageJ0: Double,
+        averageJ1: Double,
+        averageJ2: Double,
+        averageJ: Double,
+        averageJa: Double,
+        uAm06: Double,
+        uBm06: Double,
+        uCm06: Double,
+        uRm06: Double,
+        uAm16: Double,
+        uBm16: Double,
+        uCm16: Double,
+        uCm016: Double,
+        uRm016: Double,
+        uAm6: Double,
+        uBm6: Double,
+        uCm6: Double,
+        uCm02m6: Double,
+        uRm02m: Double,
+        uAd16: Double,
+        uBd16: Double,
+        uCd16: Double,
+        uRd16: Double,
+        uAd26: Double,
+        uBd26: Double,
+        uCd26: Double,
+        uRd26: Double,
+        uAH6: Double,
+        uBH6: Double,
+        uCH6: Double,
+        uRH6: Double,
+        uAT06: Double,
+        uBT06: Double,
+        uCT06: Double,
+        uRT06: Double,
+        uAT16: Double,
+        uBT16: Double,
+        uCT16: Double,
+        uRT16: Double,
+        uATa6: Double,
+        uBTa6: Double,
+        uCTa6: Double,
+        uRTa6: Double,
+        uRJ06: Double,
+        uCJ06: Double,
+        uRJ16: Double,
+        uCJ16: Double,
+        uRJ26: Double,
+        uCJ26: Double,
+        uCJ6: Double,
+        uRJ6: Double,
+        uCJa6: Double,
+        uRJa6: Double
+    ) {
+        this.H = H
+        this.d1 = d1
+        this.d2 = d2
+        this.m0 = m0
+        this.T0 = T0
+        this.T1 = T1
+        this.D1 = D1
+        this.D2 = D2
+        this.m1 = m1
+        this.a = a
+        this.dx = dx
+        this.m = m
+        this.Ta = Ta
+        this.averaged1 = averaged1
+        this.averaged2 = averaged2
+        this.averageT1 = averageT1
+        this.averageH = averageH
+        this.averageJ0 = averageJ0
+        this.averageJ1 = averageJ1
+        this.averageJ2 = averageJ2
+        this.averageJ = averageJ
+        this.averageJa = averageJa
+        this.uAm06 = uAm06
+        this.uBm06 = uBm06
+        this.uCm06 = uCm06
+        this.uRm06 = uRm06
+        this.uAm16 = uAm16
+        this.uBm16 = uBm16
+        this.uCm16 = uCm16
+        this.uCm016 = uCm016
+        this.uRm016 = uRm016
+        this.uAm6 = uAm6
+        this.uBm6 = uBm6
+        this.uCm6 = uCm6
+        this.uCm02m6 = uCm02m6
+        this.uRm02m = uRm02m
+        this.uAd16 = uAd16
+        this.uBd16 = uBd16
+        this.uCd16 = uCd16
+        this.uRd16 = uRd16
+        this.uAd26 = uAd26
+        this.uBd26 = uBd26
+        this.uCd26 = uCd26
+        this.uRd26 = uRd26
+        this.uAH6 = uAH6
+        this.uBH6 = uBH6
+        this.uCH6 = uCH6
+        this.uRH6 = uRH6
+        this.uAT06 = uAT06
+        this.uBT06 = uBT06
+        this.uCT06 = uCT06
+        this.uRT06 = uRT06
+        this.uAT16 = uAT16
+        this.uBT16 = uBT16
+        this.uCT16 = uCT16
+        this.uRT16 = uRT16
+        this.uATa6 = uATa6
+        this.uBTa6 = uBTa6
+        this.uCTa6 = uCTa6
+        this.uRTa6 = uRTa6
+        this.uRJ06 = uRJ06
+        this.uCJ06 = uCJ06
+        this.uRJ16 = uRJ16
+        this.uCJ16 = uCJ16
+        this.uRJ26 = uRJ26
+        this.uCJ26 = uCJ26
+        this.uCJ6 = uCJ6
+        this.uRJ6 = uRJ6
+        this.uCJa6 = uCJa6
+        this.uRJa6 = uRJa6
+    }
 }

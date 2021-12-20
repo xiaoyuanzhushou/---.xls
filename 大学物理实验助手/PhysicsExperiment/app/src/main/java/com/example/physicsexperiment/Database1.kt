@@ -71,4 +71,40 @@ open class Database1 {
     var Vt1: Double = V*sqrt(t/273.15+1)
 
     var E1: Double = sqrt(V-Vt1)/Vt1
+
+    constructor(
+        f: Int,
+        t: Int,
+        Xi: Array<Int>,
+        L: List<Int>,
+        averageL: Int,
+        LiAverageL: List<Int>,
+        lambda: Double,
+        V: Double,
+        temL1: Double,
+        uAL1: Double,
+        uBL1: Double,
+        uCL1: Double,
+        uLambda1: Double,
+        uV1: Double,
+        Vt1: Double,
+        E1: Double
+    ) {
+        this.f = f
+        this.t = t
+        this.Xi = Xi
+        this.L = L
+        this.averageL = averageL
+        this.LiAverageL = LiAverageL
+        this.lambda = lambda
+        this.V = V
+        this.temL1 = temL1
+        this.uAL1 = uAL1
+        this.uBL1 = uBL1
+        this.uCL1 = uCL1
+        this.uLambda1 = uLambda1
+        this.uV1 = uV1
+        this.Vt1 = Vt1
+        this.E1 = E1
+    }
 }

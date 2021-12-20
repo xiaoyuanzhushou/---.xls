@@ -215,4 +215,104 @@ class Database2 {
      * E-合成不确定度
      */
     var uCE2: Double = averageE2*uRE2
+
+    constructor(
+        aUp: Array<Double>,
+        aDown: Array<Double>,
+        aAverage: Array<Double>,
+        Xi: Array<Double>,
+        averageX: Double,
+        deltaXi: Array<Double>,
+        D0: Double,
+        D1: Array<Double>,
+        D: Array<Double>,
+        averageD: Double,
+        deltaD: Array<Double>,
+        X1: Array<Double>,
+        X2: Array<Double>,
+        b: Array<Double>,
+        L: Double,
+        H: Array<Double>,
+        averageH: Double,
+        deltaH: Array<Double>,
+        averageL: Double,
+        averageb: Double,
+        deltab: Array<Double>,
+        averagel: Double,
+        averageE2: Double,
+        temD2: Double,
+        uAD2: Double,
+        uBD2: Double,
+        uCD2: Double,
+        temX2: Double,
+        uAX2: Double,
+        uBX2: Double,
+        uCX2: Double,
+        temH2: Double,
+        uAH2: Double,
+        uBH2: Double,
+        uCH2: Double,
+        uAL2: Double,
+        uBL2: Double,
+        uCL2: Double,
+        temb2: Double,
+        uAb2: Double,
+        uBb2: Double,
+        uCb2: Double,
+        uAm2: Double,
+        uBm2: Double,
+        uCm2: Double,
+        uCl2: Double,
+        uRE2: Double,
+        uCE2: Double
+    ) {
+        this.aUp = aUp
+        this.aDown = aDown
+        this.aAverage = aAverage
+        this.Xi = Xi
+        this.averageX = averageX
+        this.deltaXi = deltaXi
+        this.D0 = D0
+        this.D1 = D1
+        this.D = D
+        this.averageD = averageD
+        this.deltaD = deltaD
+        this.X1 = X1
+        this.X2 = X2
+        this.b = b
+        this.L = L
+        this.H = H
+        this.averageH = averageH
+        this.deltaH = deltaH
+        this.averageL = averageL
+        this.averageb = averageb
+        this.deltab = deltab
+        this.averagel = averagel
+        this.averageE2 = averageE2
+        this.temD2 = temD2
+        this.uAD2 = uAD2
+        this.uBD2 = uBD2
+        this.uCD2 = uCD2
+        this.temX2 = temX2
+        this.uAX2 = uAX2
+        this.uBX2 = uBX2
+        this.uCX2 = uCX2
+        this.temH2 = temH2
+        this.uAH2 = uAH2
+        this.uBH2 = uBH2
+        this.uCH2 = uCH2
+        this.uAL2 = uAL2
+        this.uBL2 = uBL2
+        this.uCL2 = uCL2
+        this.temb2 = temb2
+        this.uAb2 = uAb2
+        this.uBb2 = uBb2
+        this.uCb2 = uCb2
+        this.uAm2 = uAm2
+        this.uBm2 = uBm2
+        this.uCm2 = uCm2
+        this.uCl2 = uCl2
+        this.uRE2 = uRE2
+        this.uCE2 = uCE2
+    }
 }

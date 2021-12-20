@@ -65,4 +65,40 @@ class Database7 {
     var uRB7: Double = 0.000000
 
     var uCB7: Double = B7*uRB7
+
+    constructor(
+        KH: Double,
+        I1: Double,
+        I2: Double,
+        U1: Array<Double>,
+        U2: Array<Double>,
+        UH7: Array<Double>,
+        averageUH7: Double,
+        B7: Double,
+        uAUH7: Double,
+        uBUH7: Double,
+        uCUH7: Double,
+        uAI7: Double,
+        uBI7: Double,
+        uCI7: Double,
+        uRB7: Double,
+        uCB7: Double
+    ) {
+        this.KH = KH
+        this.I1 = I1
+        this.I2 = I2
+        this.U1 = U1
+        this.U2 = U2
+        this.UH7 = UH7
+        this.averageUH7 = averageUH7
+        this.B7 = B7
+        this.uAUH7 = uAUH7
+        this.uBUH7 = uBUH7
+        this.uCUH7 = uCUH7
+        this.uAI7 = uAI7
+        this.uBI7 = uBI7
+        this.uCI7 = uCI7
+        this.uRB7 = uRB7
+        this.uCB7 = uCB7
+    }
 }

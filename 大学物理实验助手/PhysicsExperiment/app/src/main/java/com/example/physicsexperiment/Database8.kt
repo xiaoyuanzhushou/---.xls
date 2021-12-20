@@ -42,4 +42,26 @@ class Database8 {
     var uCE8: Double = sqrt(U*U*uCLac8*uCLac8)
 
     var uRE8: Double = uCE8/E8
+
+    constructor(
+        R: Array<Double>,
+        Lac: Array<Double>,
+        averageLac8: Double,
+        E8: Double,
+        tem8: Double,
+        uALac8: Double,
+        uCLac8: Double,
+        uCE8: Double,
+        uRE8: Double
+    ) {
+        this.R = R
+        this.Lac = Lac
+        this.averageLac8 = averageLac8
+        this.E8 = E8
+        this.tem8 = tem8
+        this.uALac8 = uALac8
+        this.uCLac8 = uCLac8
+        this.uCE8 = uCE8
+        this.uRE8 = uRE8
+    }
 }

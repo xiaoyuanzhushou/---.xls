@@ -71,4 +71,34 @@ class Database4 {
      * u和v的不确定度,cm
      */
     var uAu4: Double = 0.000000
+
+    constructor(
+        u: Double,
+        v: Double,
+        f: Array<Double>,
+        L: Array<Double>,
+        D: Double,
+        positionOfA1B1: Double,
+        positionOfA2B2: Double,
+        positionOfL2: Double,
+        x1: Array<Double>,
+        x2: Array<Double>,
+        uBX4: Double,
+        uCX4: Double,
+        uAu4: Double
+    ) {
+        this.u = u
+        this.v = v
+        this.f = f
+        this.L = L
+        this.D = D
+        this.positionOfA1B1 = positionOfA1B1
+        this.positionOfA2B2 = positionOfA2B2
+        this.positionOfL2 = positionOfL2
+        this.x1 = x1
+        this.x2 = x2
+        this.uBX4 = uBX4
+        this.uCX4 = uCX4
+        this.uAu4 = uAu4
+    }
 }

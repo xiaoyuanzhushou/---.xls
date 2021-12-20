@@ -49,4 +49,28 @@ class Database10 {
     var deltalambda: Double = (averagelambda*averagelambda)/(2*deltad)
 
     var E2: Double = sqrt((deltalambda-deltalambdaS)*(deltalambda-deltalambdaS))/deltalambdaS
+
+    constructor(
+        X0: Array<Double>,
+        X1: Array<Double>,
+        N: Int,
+        X10: Double,
+        XN: Double,
+        deltad: Double,
+        lambda: Double,
+        E1: Double,
+        deltalambda: Double,
+        E2: Double
+    ) {
+        this.X0 = X0
+        this.X1 = X1
+        this.N = N
+        this.X10 = X10
+        this.XN = XN
+        this.deltad = deltad
+        this.lambda = lambda
+        this.E1 = E1
+        this.deltalambda = deltalambda
+        this.E2 = E2
+    }
 }

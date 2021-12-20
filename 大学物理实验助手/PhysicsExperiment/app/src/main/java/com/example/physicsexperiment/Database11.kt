@@ -37,10 +37,11 @@ class Database11 {
      * 计算部分
      */
     var deltaR: Array<Double> = arrayOf(((RbUp[3]+RbDown[3])-(RbUp[0]+RbDown[0]))/2,
-            ((RbUp[4]+RbDown[4])-(RbUp[1]+RbDown[1]))/2,((RbUp[5]+RbDown[5])-(RbUp[2]+RbDown[2]))/2)
+        ((RbUp[4]+RbDown[4])-(RbUp[1]+RbDown[1]))/2,((RbUp[5]+RbDown[5])-(RbUp[2]+RbDown[2]))/2)
 
     var averageDeltaR: Double = (((RbUp[3]+RbDown[3])-(RbUp[0]+RbDown[0]))/2+
-        ((RbUp[4]+RbDown[4])-(RbUp[1]+RbDown[1]))/2+((RbUp[5]+RbDown[5])-(RbUp[2]+RbDown[2]))/2)/3
+            ((RbUp[4]+RbDown[4])-(RbUp[1]+RbDown[1]))/2+
+            ((RbUp[5]+RbDown[5])-(RbUp[2]+RbDown[2]))/2)/3
 
     var epsilonX: Double = 0.000000
 
@@ -58,4 +59,38 @@ class Database11 {
     var uRepsilonX: Double = 0.000000
 
     var uCepsilonX: Double = 0.000000
+
+    constructor(
+        K: Double,
+        RX: Double,
+        I: Double,
+        S: Int,
+        RbUp: Array<Double>,
+        RbDown: Array<Double>,
+        deltaR: Array<Double>,
+        averageDeltaR: Double,
+        epsilonX: Double,
+        tem11: Double,
+        uAdeltaR: Double,
+        uBdeltaR: Double,
+        uCdeltaR: Double,
+        uRepsilonX: Double,
+        uCepsilonX: Double
+    ) {
+        this.K = K
+        this.RX = RX
+        this.I = I
+        this.S = S
+        this.RbUp = RbUp
+        this.RbDown = RbDown
+        this.deltaR = deltaR
+        this.averageDeltaR = averageDeltaR
+        this.epsilonX = epsilonX
+        this.tem11 = tem11
+        this.uAdeltaR = uAdeltaR
+        this.uBdeltaR = uBdeltaR
+        this.uCdeltaR = uCdeltaR
+        this.uRepsilonX = uRepsilonX
+        this.uCepsilonX = uCepsilonX
+    }
 }
