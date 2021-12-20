@@ -71,7 +71,7 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteViewHolder> {
                 for (Note item : notes) {
                     Log.d("data", "In NoteListAdapter id:" + item.getId() + " state:" + item.getState() + " priority:" + item.getPriority());
                 }
-                //todo 根据${com.byted.camp.todolist.operation.activity.SettingActivity} 中设置的sp控制是否将已完成的完成排到最后，默认不排序
+                //todo 根据${com.byted.camp.todolist.operation.activity.SettingActivity中设置的sp控制是否将已完成的完成排到最后
             }
         }
             notifyDataSetChanged();

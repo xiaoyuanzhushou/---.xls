@@ -3,8 +3,8 @@
     <color name="colorPrimary">#99CCFF</color>
     <color name="colorPrimaryDark">#99CCFF</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorlist1">#CCFFFF</color>
-    <color name="colorTitle">#99CCFF</color>
+    <color name="colorlist1">#99CCFF</color>
+    <color name="colorTitle">#CCFFFF</color>
     <color name="colorMiddle">#FFFFCC</color>
     <color name="colorLow">#CCFF99</color>
     <color name="colorHigh">#FF6666</color>

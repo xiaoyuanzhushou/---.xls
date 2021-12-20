@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
-    tools:context=".operation.activity.DatabaseActivity">
+    tools:context="com.example.tomatoclock.activity.DatabaseActivity">
 
     <Button
         android:id="@+id/btn_add"
