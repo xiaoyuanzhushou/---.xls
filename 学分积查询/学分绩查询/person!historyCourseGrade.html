@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0096)http://us.nwpu.edu.cn/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title></title>
+  
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <script type="text/javascript" src="./person!historyCourseGrade_files/jquery,jquery.ui.core.js.下载"></script>
+  <script type="text/javascript" src="./person!historyCourseGrade_files/jquery-form,jquery-history,jquery-colorbox,jquery-chosen.js.下载"></script>
+  <script type="text/javascript" src="./person!historyCourseGrade_files/jquery.struts2,jquery.ui.struts2.js.下载"></script>
+  <script type="text/javascript" src="./person!historyCourseGrade_files/beangle,beangle-ui.js.下载"></script>
+  <script type="text/javascript">var App = {contextPath:"/eams"};jQuery(document).ready(function () {jQuery.struts2_jquery.version="3.6.1";beangle.contextPath=App.contextPath;jQuery.scriptPath = App.contextPath+"/static/";jQuery.struts2_jquerySuffix = "";jQuery.ajaxSettings.traditional = true;jQuery.ajaxSetup ({cache: false});});</script>
+  <script type="text/javascript" src="./person!historyCourseGrade_files/WdatePicker-4.72.js.下载"></script><link href="./person!historyCourseGrade_files/WdatePicker.css" rel="stylesheet" type="text/css">
+  <link id="jquery_theme_link" rel="stylesheet" href="./person!historyCourseGrade_files/jquery-ui.css" type="text/css">
+  <link id="beangle_theme_link" href="./person!historyCourseGrade_files/beangle-ui,colorbox,chosen.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./person!historyCourseGrade_files/foundation.css" type="text/css">
+
+	<script src="./person!historyCourseGrade_files/require.config.js.下载"></script>
+	<script>
+	require.baseUrl="/eams/static/scripts";
+	</script>
+	<script src="./person!historyCourseGrade_files/require.js.下载"></script>
+	<script type="text/javascript" src="./person!historyCourseGrade_files/require.js.下载"></script>
+	
+	<!-- backbone & underscore -- fontend MVC framework -->
+	<script type="text/javascript" src="./person!historyCourseGrade_files/underscore.min.js.下载"></script>
+	<script type="text/javascript" src="./person!historyCourseGrade_files/backbone.min.js.下载"></script>
+	<script type="text/javascript" src="./person!historyCourseGrade_files/underscore.string.min.js.下载"></script>
+	<script>
+	require(['underscore.string'], function(_s) {
+	        _.str = _s;
+	        _.mixin(_.str.exports());
+	});
+	</script>
+	
+<link href="./person!historyCourseGrade_files/homePage.css" rel="stylesheet" type="text/css">
+<script src="./person!historyCourseGrade_files/view_menus.js.下载" type="text/javascript"></script>
+<script src="./person!historyCourseGrade_files/jscroll.js.下载" type="text/javascript"></script>
+<script src="./person!historyCourseGrade_files/jquery.cookie.js.下载" type="text/javascript"></script>
+<script src="./person!historyCourseGrade_files/highcharts.js.下载"></script>
+<script type="text/javascript" src="./person!historyCourseGrade_files/submitFrame.js.下载"></script>
+
+<link rel="stylesheet" type="text/css" href="./person!historyCourseGrade_files/semesterCalendar.css"><style type="text/css"></style></head>
+<body style="">
+
+<!-- 头部导航 -->
+<div id="Nav_bar">
+	<div class="logo_box"><img src="./person!historyCourseGrade_files/logo_png.jpg"></div>
+	<div id="quicklink_5">
+		<a href="http://us.nwpu.edu.cn/eams/logout.action">退出</a>
+	</div>
+	<div class="welcome_bar">
+<form id="form11754836551" name="form11754836551" action="http://us.nwpu.edu.cn/eams/home.action" method="post">
+
+			<a href="http://us.nwpu.edu.cn/eams/security/my.action" target="_blank" title="查看登录记录"><span style="padding:0 2px;color:#fff;font-weight:blod;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width:110px;" title="洪博 2020303163">洪博 2020303163</span></a>&nbsp;&nbsp;
+				<span style="padding:0 2px;color:#FFF;font-weight:blod;">学生</span>
+				<input type="hidden" name="security.userCategoryId" value="1" style="width:70px">
+	   		<select id="session_locale" name="session_locale" style="width:70px;" onchange="bg.form.submit(this.form)">
+				<option value="zh_CN">中文</option>
+				<option value="en_US">英文</option>
+			</select>
+
+</form>
+		<div class="welcome_card">
+			尊敬的洪博用户，欢迎使用西北工业大学教务系统。<br>
+			今天是2021年12月20号/星期一,农历日期:辛丑年(牛年),十一月十七。<br>
+				本周为 2021-2022学年秋季学期 第17教学周。
+		</div>		
+	</div>	</div>
+
+<!-- 中部内容 -->
+<div id="BodyBg">
+	<div id="tab_title_box_1">
+<a href="http://us.nwpu.edu.cn/eams/home!index.action" onclick="return bg.Go(this,null)" class="a_now">			<span>首页</span>
+</a>	</div>
+	<div id="position_block">
+		<div id="position_card">
+			<div id="position_bar">
+				<form name="actionForms" id="actionForms"><input name="menu.id" value="165" type="hidden"></form>
+				<b>您的当前位置：&nbsp;</b><a href="http://us.nwpu.edu.cn/eams/home!index.action">首页</a>
+			<span class="secondMenu">&nbsp;&gt;&nbsp;<a href="javascript:void(0)" onclick="childmenus2(165)">我的学业</a></span><span class="fontMenu">&nbsp;&gt;&nbsp;成绩与成绩单</span></div>	
+		</div>	
+	</div>
+<div id="main" class="ajax_container"><div id="allSemesterScoreForm" class="ajax_container">
+ <div id="toolbar7567178081" class="toolbar notprint"><div class="toolbar-title"><span class="toolbar-icon action-info"></span><strong>我的成绩</strong></div><div class="toolbar-items" id="toolbar7567178081_items"><div class="toolbar-item-ge0 toolbar-item" title="所有学期成绩"><span class="toolbar-icon action-default"></span>所有学期成绩</div></div><div class="toolbar-msg" id="toolbar7567178081_msg" style="display: none;"></div><div class="toolbar-line"><img height="1" width="100%" align="top" src="./person!historyCourseGrade_files/keyline.png"></div></div>
+<script type="text/javascript">
+  bar = bg.ui.toolbar("toolbar7567178081",'我的成绩');
+  			bar.addItem("所有学期成绩", "historyCourseGrade(document.allSemesterForm, 'MAJOR')");
+
+		function historyCourseGrade(form, projectType) {
+			jQuery('#semesterForm').parent().hide();
+			bg.form.submit(form,"/eams/teach/grade/course/person!historyCourseGrade.action?projectType=" + projectType);
+		}
+		
+		function personGrade(form){
+			form.target="_blank";
+			bg.form.submit(form,"/eams/teach/grade/transcript/report.action");
+			form.target="allSemesterScoreForm";
+		}
+
+  bar.addHr();
+</script><div style="background: url(&quot;/eams/static/images/semesterBarBg.png&quot;) 50% 50% repeat-x scroll rgb(222, 237, 247); border: 1px solid rgb(174, 208, 234); color: rgb(34, 34, 34); font-weight: bold; height: 28px; display: none;">
+
+<form id="semesterForm" name="semesterForm" action="http://us.nwpu.edu.cn/eams/teach/grade/course/person.action" method="post" target="">
+
+<div style="margin-left:4px;margin-top:2px;float:left;line-height:22px;height:22px;">
+	
+</div>
+<div style="margin-left:10px;margin-top:2px;float:left;line-height:18px;height:22px;">
+<label for="semesterBar7567178081" style="display: none;">项目:</label>
+<select id="semesterBar7567178081" name="project.id" style="display: none;">	<option value="1" selected="">本科教学</option>
+</select>
+	<label for="semesterBar7567178081Semester" class="title">学年学期:</label>
+	<input id="semesterBar7567178081Semester" class="calendar-text calendar-text-state-default" title="学年学期" type="text" value="" readonly="true">
+	<div class="calendar-bar" tabindex="-1">
+		<input id="semesterCalendar_target" type="hidden" name="semester.id" value="179">
+		<a name="prev" href="http://us.nwpu.edu.cn/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR#" style="display:none"><img src="./person!historyCourseGrade_files/semesterCalendar_prev.gif"></a>
+		<input id="semesterCalendar_year" class="calendar-bar-input" type="text" index="9" value="" maxlength="4" size="4" readonly="true" style="display:none"><span style="display:none">学年</span>
+		<a name="next" href="http://us.nwpu.edu.cn/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR#" style="display:none"><img src="./person!historyCourseGrade_files/semesterCalendar_next.gif"></a>
+		
+		<a name="prev" href="http://us.nwpu.edu.cn/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR#" style="display:none"><img src="./person!historyCourseGrade_files/semesterCalendar_prev.gif"></a>
+		<input id="semesterCalendar_term" class="calendar-bar-input" type="text" index="2" value="" size="4" readonly="true" style="display:none"><span style="display:none">学期</span>
+		<a name="next" href="http://us.nwpu.edu.cn/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR#" style="display:none"><img src="./person!historyCourseGrade_files/semesterCalendar_next.gif"></a>
+		<a href="http://us.nwpu.edu.cn/eams/teach/grade/course/person!historyCourseGrade.action?projectType=MAJOR#" id="allSemester" style="display:none"></a>
+		
+		<table id="semesterCalendar_yearTb" class="semesterCalendar_yearTb" style="border-right: 1px solid rgb(221, 221, 221);">
+			<tbody><tr><td class="calendar-bar-td-blankBorder" index="0">2012-2013</td><td class="calendar-bar-td-blankBorder" index="1">2013-2014</td><td class="calendar-bar-td-blankBorder" index="2">2014-2015</td></tr><tr><td class="calendar-bar-td-blankBorder" index="3">2015-2016</td><td class="calendar-bar-td-blankBorder" index="4">2016-2017</td><td class="calendar-bar-td-blankBorder" index="5">2017-2018</td></tr><tr><td class="calendar-bar-td-blankBorder" index="6">2018-2019</td><td class="calendar-bar-td-blankBorder" index="7">2019-2020</td><td class="calendar-bar-td-blankBorder" index="8">2020-2021</td></tr><tr><td class="calendar-bar-td-blankBorder" index="9">2021-2022</td><td class="calendar-bar-td-blankBorder"></td><td class="calendar-bar-td-blankBorder"></td><td class="calendar-bar-td-blankBorder"></td></tr></tbody>
+		</table>
+		<!-- 两个table之间的空div用来解决IE6 下莫名其妙重复渲染最后一个学年td中的文字的bug-->
+		<div></div>
+		<table id="semesterCalendar_termTb" class="semesterCalendar_termTb" style="border-left: 0px none;">
+			<tbody><tr><td class="calendar-bar-td-blankBorder" val="158"><span>秋</span>学期</td></tr><tr><td class="calendar-bar-td-blankBorder" val="178"><span>春</span>学期</td></tr><tr><td class="calendar-bar-td-blankBorder" val="179"><span>夏</span>学期</td></tr></tbody>
+		</table>
+	</div>
+	<script type="text/javascript" src="./person!historyCourseGrade_files/semesterCalendar_zh.js.下载"></script>
+	<script type="text/javascript">
+		if(jQuery.struts2_jquery.scriptCache["/scripts/semesterCalendar.js?s2j="+jQuery.struts2_jquery.version]){
+			jQuery("#semesterBar7567178081Semester").semesterCalendar({empty:"false",onChange:"",value:"179"},"");
+		}else{
+			jQuery.struts2_jquery.require("/scripts/semesterCalendar.js",function(){
+				jQuery("#semesterBar7567178081Semester").semesterCalendar({empty:"false",onChange:"",value:"179"},"");
+			},'/eams/static');
+		}
+
+	</script>
+<script type="text/javascript">
+		jQuery("#semesterBar7567178081").val(jQuery.post("/eams/dataQuery.action",{dataType:"projectId"}));
+		jQuery("#semesterBar7567178081").hide();
+		jQuery("#semesterBar7567178081").prev().hide();
+		var semesterBar7567178081res = jQuery.post("/eams/dataQuery.action",{entityId:""},function(){
+			if(semesterBar7567178081res.status==200){
+				jQuery("#semesterBar7567178081").empty();
+				if(semesterBar7567178081res.responseText!=""){
+					jQuery("#semesterBar7567178081").append(semesterBar7567178081res.responseText);
+				}
+			}
+		},"text");
+	jQuery("#semesterBar7567178081").change(function(){
+		jQuery.post("/eams/dataQuery!changeProjectId.action",{projectId:this.value},function(){
+			jQuery("#semesterBar7567178081Semester")[0].getSemesters(jQuery("#semesterBar7567178081Semester"),{empty:"false",value:"179"});
+		},"text");
+	});
+</script>
+<input type="submit" value="切换学期" onclick="bg.form.submit(&#39;semesterForm&#39;,null,null,null);return false;">
+</div>
+
+</form>
+</div><div id="semesterGrade" class="ajax_container">
+ <div style="margin-top:10px;" class="ajax_container"></div>
+
+<table class="gridtable">
+	<thead class="gridhead">
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>总学分</th>
+			<th>总学分绩点</th>
+			<th>平均学分绩点(GPA)</th>
+		</tr>
+	</thead>
+	<tbody>
+				<tr class="griddata-even">
+						<th>2020303163</th>
+						<th>洪博</th>
+						<th>60.5</th>
+						<th>170.95</th>
+						<th> 
+					2.873</th>
+				</tr>
+	 	<tr class="griddata-odd">
+	 		<th colspan="5" align="right">统计时间:2021-12-20 05:07</th>
+		</tr>
+	</tbody>
+</table>
+
+	<div style="margin-top:10px;text-align:center;font-weight:bold;" class="ajax_container">成绩列表</div>
+
+
+ <form id="showInfoForm" name="showInfoForm" action="http://us.nwpu.edu.cn/eams/teach/grade/course/person!info.action" method="post" target="_blank">
+
+
+</form>
+<div class="grid">
+
+
+<table id="grid21344342991" class="gridtable">
+<thead class="gridhead">
+
+
+<tr>
+<th width="10%">学年学期</th>
+<th width="10%">课程代码</th>
+<th width="10%">课程序号</th>
+<th width="20%">课程名称</th>
+<th width="14%">课程类别</th>
+<th width="4%">学分</th>
+<th width="4%">平时成绩</th>
+<th width="4%">期中成绩</th>
+<th width="4%">实验成绩</th>
+<th width="4%">期末成绩</th>
+<th width="4%">总评成绩</th>
+<th width="4%">补考成绩</th>
+<th width="4%">最终</th>
+<th width="4%">绩点</th>
+</tr>
+
+</thead>
+
+<tbody id="grid21344342991_data"><tr class="griddata-even   ">		<td>2020-2021 秋</td>
+		<td>U10M11144</td>
+		<td>U10M11144.05</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37777388)" title="查看成绩详情">计算机系统基础</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>2</td>
+<td style="">	  			85 
+</td><td style=""></td><td style=""></td><td style="">	  			75 
+</td><td style="">	  			78 
+</td><td style=""></td><td style="">				78
+			
+</td><td>					3
+			
+</td>		
+</tr><tr class="griddata-odd  ">		<td>2020-2021 秋</td>
+		<td>U34G11004</td>
+		<td>U34G11004.02</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37715749)" title="查看成绩详情">大学生心理健康教育</a>
+		
+		</td>
+<td>体育与健康类</td>		<td>2</td>
+<td style="">	  			90 
+</td><td style=""></td><td style="">	  			87 
+</td><td style="">	  			91 
+</td><td style="">	  			90 
+</td><td style=""></td><td style="">				90
+			
+</td><td>					3.9
+			
+</td>		
+</tr><tr class="griddata-even  ">		<td>2020-2021 秋</td>
+		<td>U10G13029</td>
+		<td>U10G13029.02</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37818929)" title="查看成绩详情">程序设计基础Ⅲ</a>
+		
+		</td>
+<td>信息类</td>		<td>3</td>
+<td style=""></td><td style=""></td><td style=""></td><td style="">	  			85 
+</td><td style="">	  			85 
+</td><td style=""></td><td style="">				85
+			
+</td><td>					3.7
+			
+</td>		
+</tr><tr class="griddata-odd   ">		<td>2020-2021 秋</td>
+		<td>U10M21003</td>
+		<td>U10M21003.02</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37803891)" title="查看成绩详情">计算机系统基础实验</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>1.5</td>
+<td style=""></td><td style=""></td><td style="">	  			68 
+</td><td style=""></td><td style="">	  			68 
+</td><td style=""></td><td style="">				68
+			
+</td><td>					2
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 秋</td>
+		<td>U31G71075</td>
+		<td>U31G71075.04</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37782031)" title="查看成绩详情">足球初级</a>
+		
+		</td>
+<td>限选</td>		<td>1</td>
+<td style=""></td><td style=""></td><td style=""></td><td style="">	  			92 
+</td><td style="">	  			92 
+</td><td style=""></td><td style="">				92
+			
+</td><td>					3.9
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 秋</td>
+		<td>U44G11001</td>
+		<td>U44G11001.08</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37727296)" title="查看成绩详情">中国近现代史纲要</a>
+		
+		</td>
+<td>思想政治理论类</td>		<td>3</td>
+<td style="">	  			91 
+</td><td style=""></td><td style="">	  			89 
+</td><td style="">	  			54 
+</td><td style="">	  			72 
+</td><td style=""></td><td style="">				72
+			
+</td><td>					2.3
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 秋</td>
+		<td>U11G11022</td>
+		<td>U11G11022.17</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37745249)" title="查看成绩详情">高等数学（上）</a>
+		
+		</td>
+<td>数学与自然科学类</td>		<td>5.5</td>
+<td style="">	  			85 
+</td><td style="">	  			94 
+</td><td style=""></td><td style="">	  			79 
+</td><td style="">	  			83 
+</td><td style=""></td><td style="">				83
+			
+</td><td>					3.3
+			
+</td>		
+</tr><tr class="griddata-odd  ">		<td>2020-2021 秋</td>
+		<td>U10M71017</td>
+		<td>U10M71017.05</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37699641)" title="查看成绩详情">智能时代的计算机科学</a>
+		
+		</td>
+<td>新生研讨类</td>		<td>1</td>
+<td style=""></td><td style=""></td><td style=""></td><td style="">	  			P 
+</td><td style="">	  			P 
+</td><td style=""></td><td style="">				P
+			
+</td><td>					
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 秋</td>
+		<td>U11G11026</td>
+		<td>U11G11026.12</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37724563)" title="查看成绩详情">线性代数Ⅰ</a>
+		
+		</td>
+<td>数学与自然科学类</td>		<td>2.5</td>
+<td style="">	  			98 
+</td><td style=""></td><td style=""></td><td style="">	  			88 
+</td><td style="">	  			90 
+</td><td style=""></td><td style="">				90
+			
+</td><td>					3.9
+			
+</td>		
+</tr><tr class="griddata-odd  ">		<td>2020-2021 秋</td>
+		<td>U34G11005</td>
+		<td>U34G11005.24</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37742610)" title="查看成绩详情">军事理论</a>
+		
+		</td>
+<td>军事类</td>		<td>2</td>
+<td style="">	  			100 
+</td><td style=""></td><td style=""></td><td style="">	  			46 
+</td><td style="">	  			51 
+</td><td style="">	  			75 
+</td><td style="">				75
+			
+</td><td>					1
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 秋</td>
+		<td>U10G23030</td>
+		<td>U10G23030.04</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37765027)" title="查看成绩详情">程序设计基础III实验</a>
+		
+		</td>
+<td>信息类</td>		<td>1</td>
+<td style=""></td><td style=""></td><td style=""></td><td style="">	  			81 
+</td><td style="">	  			81 
+</td><td style=""></td><td style="">				81
+			
+</td><td>					3.3
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 秋</td>
+		<td>U16G12039</td>
+		<td>U16G12039.07</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37716546)" title="查看成绩详情">大学英语（Ⅱ）</a>
+		
+		</td>
+<td>语言类</td>		<td>2</td>
+<td style="">	  			81 
+</td><td style="">	  			73 
+</td><td style=""></td><td style="">	  			68 
+</td><td style="">	  			74 
+</td><td style=""></td><td style="">				74
+			
+</td><td>					2.3
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 秋</td>
+		<td>U34P41002</td>
+		<td></td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37667122)" title="查看成绩详情">军事技能训练</a>
+		
+		</td>
+<td>军事课程</td>		<td>2</td>
+<td style=""></td><td style=""></td><td style=""></td><td style=""></td><td style="">	  			优秀 
+</td><td style=""></td><td style="">				优秀
+			
+</td><td>					4
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U14M21090</td>
+		<td>U14M21090.14</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37986291)" title="查看成绩详情">信息技术基础认知与实践</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>1</td>
+<td style="">	  			98 
+</td><td style=""></td><td style="">	  			81 
+</td><td style=""></td><td style="">	  			88 
+</td><td style=""></td><td style="">				88
+			
+</td><td>					3.7
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 春</td>
+		<td>U11G23045</td>
+		<td>U11G23045.13</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37971149)" title="查看成绩详情">大学物理II（上）</a>
+		
+		</td>
+<td>数学与自然科学类</td>		<td>3.5</td>
+<td style="">	  			89 
+</td><td style="">	  			63 
+</td><td style=""></td><td style="">	  			85 
+</td><td style="">	  			79 
+</td><td style=""></td><td style="">				79
+			
+</td><td>					3
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U13G11012</td>
+		<td>U13G11012.07</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37939023)" title="查看成绩详情">思想道德与法治</a>
+		
+		</td>
+<td>思想政治理论类</td>		<td>3</td>
+<td style="">	  			88 
+</td><td style=""></td><td style="">	  			88 
+</td><td style="">	  			81 
+</td><td style="">	  			84 
+</td><td style=""></td><td style="">				84
+			
+</td><td>					3.3
+			
+</td>		
+</tr><tr class="griddata-even ">		<td>2020-2021 春</td>
+		<td>U10M13005</td>
+		<td>U10M13005.03</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37998916)" title="查看成绩详情">数据结构（双语)</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>3.5</td>
+<td style="">	  			100 
+</td><td style=""></td><td style=""></td><td style="">	  			75 
+</td><td style="">	  			83 
+</td><td style=""></td><td style="">				83
+			
+</td><td>					3.3
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U31G71073</td>
+		<td>U31G71073.14</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37993296)" title="查看成绩详情">篮球初级</a>
+		
+		</td>
+<td>限选</td>		<td>1</td>
+<td style=""></td><td style=""></td><td style=""></td><td style="">	  			77 
+</td><td style="">	  			77 
+</td><td style=""></td><td style="">				77
+			
+</td><td>					2.7
+			
+</td>		
+</tr><tr class="griddata-even">		<td>2020-2021 春</td>
+		<td>U08M11067</td>
+		<td>U08M11067.04</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37931473)" title="查看成绩详情">电路基础 III</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>2</td>
+<td style="">	  			90 
+</td><td style=""></td><td style=""></td><td style="">	  			66 
+</td><td style="">	  			73 
+</td><td style=""></td><td style="">				73
+			
+</td><td>					2.3
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U30L21046</td>
+		<td>U30L21046.14</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(38017904)" title="查看成绩详情">大学美育</a>
+		
+		</td>
+<td>审美与艺术类</td>		<td>2</td>
+<td style="">	  			62 
+</td><td style="">	  			90 
+</td><td style="">	  			100 
+</td><td style="">	  			53 
+</td><td style="">	  			66 
+</td><td style=""></td><td style="">				66
+			
+</td><td>					1.7
+			
+</td>		
+</tr><tr class="griddata-even">		<td>2020-2021 春</td>
+		<td>U11G11023</td>
+		<td>U11G11023.22</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37949669)" title="查看成绩详情">高等数学（下）</a>
+		
+		</td>
+<td>数学与自然科学类</td>		<td>6</td>
+<td style="">	  			60 
+</td><td style="">	  			80.5 
+</td><td style=""></td><td style="">	  			68 
+</td><td style="">	  			71 
+</td><td style=""></td><td style="">				71
+			
+</td><td>					2
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U16G12090</td>
+		<td>U16G12090.02</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37977308)" title="查看成绩详情">大学英语核心能力（阅读）</a>
+		
+		</td>
+<td>语言类</td>		<td>1</td>
+<td style="">	  			99.8 
+</td><td style="">	  			96 
+</td><td style=""></td><td style="">	  			58.5 
+</td><td style="">	  			74 
+</td><td style=""></td><td style="">				74
+			
+</td><td>					2.3
+			
+</td>		
+</tr><tr class="griddata-even">		<td>2020-2021 春</td>
+		<td>U10M11145</td>
+		<td>U10M11145.03</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37980398)" title="查看成绩详情">离散数学</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>4</td>
+<td style="">	  			92 
+</td><td style=""></td><td style=""></td><td style="">	  			72 
+</td><td style="">	  			78 
+</td><td style=""></td><td style="">				78
+			
+</td><td>					3
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U11G23058</td>
+		<td>U11G23058.22</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37927777)" title="查看成绩详情">大学物理实验I（上）</a>
+		
+		</td>
+<td>数学与自然科学类</td>		<td>1.5</td>
+<td style="">	  			77 
+</td><td style=""></td><td style=""></td><td style=""></td><td style="">	  			77 
+</td><td style=""></td><td style="">				77
+			
+</td><td>					2.7
+			
+</td>		
+</tr><tr class="griddata-even">		<td>2020-2021 春</td>
+		<td>U10P53013</td>
+		<td>U10P53013.04</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37992307)" title="查看成绩详情">数据结构实验（双语)</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>0.5</td>
+<td style="">	  			93.5 
+</td><td style=""></td><td style=""></td><td style="">	  			85 
+</td><td style="">	  			88 
+</td><td style=""></td><td style="">				88
+			
+</td><td>					3.7
+			
+</td>		
+</tr><tr class="griddata-odd">		<td>2020-2021 春</td>
+		<td>U16G12040</td>
+		<td>U16G12040.14</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(37934504)" title="查看成绩详情">大学英语（Ⅲ）</a>
+		
+		</td>
+<td>语言类</td>		<td>2</td>
+<td style="">	  			80 
+</td><td style="">	  			50 
+</td><td style=""></td><td style="">	  			69 
+</td><td style="">	  			72 
+</td><td style=""></td><td style="">				72
+			
+</td><td>					2.3
+			
+</td>		
+</tr><tr class="griddata-even">		<td>2020-2021 春</td>
+		<td>U08M21062</td>
+		<td>U08M21062.08</td>
+<td>				<a href="javascript:void(0)" onclick="showInfo(38018513)" title="查看成绩详情">电路基础实验</a>
+		
+		</td>
+<td>大类平台课程</td>		<td>1</td>
+<td style=""></td><td style=""></td><td style=""></td><td style="">	  			81 
+</td><td style="">	  			81 
+</td><td style=""></td><td style="">				81
+			
+</td><td>					3.3
+			
+</td>		
+</tr>	<script>
+		function showInfo(courseGradId) {
+			var form= document.showInfoForm;
+			bg.form.addInput(form,"courseGrade.id",courseGradId);
+			bg.form.submit(form,"/eams/teach/grade/course/person!info.action");
+		}
+	</script>
+</tbody>
+</table>
+</div>
+<script type="text/javascript">
+  var clearCheckbox_grid21344342991 = function() {
+    jQuery("#grid21344342991").find(".box:checkbox").removeProp("checked");
+    jQuery("#grid21344342991").find(".gridselect-top :checkbox").removeProp("checked");
+    return true;
+  }
+  
+  page_grid21344342991 = bg.page("/eams/teach/grade/course/person!historyCourseGrade.action","");
+  {
+    var _paramstring = 'projectType=MAJOR';
+    var _params = _paramstring.split('&');
+    for (var i = 0; i < _params.length; i++) {
+      _params[i] = decodeURIComponent(_params[i]);
+    }
+    _paramstring = _params.join('&');
+    page_grid21344342991.target("",'grid21344342991').action("/eams/teach/grade/course/person!historyCourseGrade.action").addParams(_paramstring).orderBy("null");
+  }
+  bg.ui.grid.init('grid21344342991',page_grid21344342991);
+</script>
+</div>
+<script>bg.ready(function(){bg.Go('/eams/teach/grade/course/person!search.action?semesterId=179&projectType=','semesterGrade')});</script>
+
+<form id="allSemesterForm" name="allSemesterForm" action="http://us.nwpu.edu.cn/eams/teach/grade/course/person.action" method="post" target="semesterGrade">
+
+
+</form>
+</div>
+
+</div>
+
+</div>
+<form name="menuForm" id="menuForm"><input name="menu.id" value="" type="hidden"></form>
+<!-- 底部版权 -->
+<div id="BottomBg">上海树维科技信息有限公司  .ALL Rights Reserved</div>
+<script type="text/javaScript">
+	jQuery(function(){
+		var form = document.menuForm;
+		bg.form.addInput(form,"menu.id","");
+		bg.form.submit(form,"/eams/home!submenus.action","contentDiv");
+	});
+	function submenus(menId){
+		var form = document.menuForm;
+		bg.form.addInput(form,"menu.id",menId);
+		bg.form.submit(form,"/eams/home!submenus.action","main");
+	}
+	$("#tab_title_box_1 a").each(function(index){
+		$(this).focus(function(e){
+			$(this).blur();
+		});
+		$(this).click(function(e){
+			$(this).parent().find("a").each(function(e){
+				$(this).removeClass("a_now");
+			});
+			$(this).addClass("a_now");
+			$("#position_bar").find("span").remove();
+			var menu_name = $(this).find("span").html();
+			if(menu_name == 'Home' || menu_name == '首页'){
+				return;
+			}
+			$("#position_bar").append("<span class='fontMenu'>&nbsp;>&nbsp;" + menu_name + "</span>");
+		});
+	});
+	
+  	function changePassword(){
+	  	var url = "/eams/changePassword!changePassword.action";
+	  	var selector= window.open(url, 'selector', 'scrollbars=yes,status=yes,width=1,height=1,left=1000,top=1000');
+	  	selector.moveTo(200,200);
+	  	selector.resizeTo(300,250);
+  	}
+  
+  	function goNode(type, no){
+	  	$("[class^='left_box_list_page_"+type+"_']").each(function(index){
+	  		$(this).css('display','none'); 
+	  	}); 				
+  	 	$(".left_box_list_page_"+type+"_"+no).css('display','block'); 
+ 	  	$("[id^='page_"+type+"_']").each(function(index){
+	  		$(this).css("box-shadow","5px 5px 5px 1px #999 inset"); 
+	  	}); 	 
+  	 	$("#page_"+type+"_"+no).css("box-shadow","5px 5px 5px 4px #8F3931 inset");
+  	}  
+  
+  	jQuery(document).ready(function(){
+  			goNode(1, 1);
+  			goNode(2, 1);
+  			goNode(3, 1);
+  			goNode(4, 1);
+  });	
+</script>
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div id="messageZone" style="position: absolute; z-index: 1000; top: 0px; right: 0px; width: 55px; height: 20px; background: rgb(249, 237, 190); padding: 2px; visibility: hidden;">Loading...</div><div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 186px; height: 198px;" src="./person!historyCourseGrade_files/My97DatePicker.html" frameborder="0" border="0" scrolling="no"></iframe></div></body></html>
