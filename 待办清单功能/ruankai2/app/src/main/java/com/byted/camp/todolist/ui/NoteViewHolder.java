@@ -54,7 +54,9 @@ public class NoteViewHolder extends RecyclerView.ViewHolder {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 note.setState(isChecked ? State.DONE : State.TODO);
                 Log.d("NoteViewHolder", "In NoteViewHolder In onCheckedChanged State: " + note.getState());
+
                 operator.updateNote(note);
+
                 if (note.getState() == State.DONE) {
                     contentText.setTextColor(Color.GRAY);
                     contentText.setPaintFlags(contentText.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
@@ -62,13 +64,13 @@ public class NoteViewHolder extends RecyclerView.ViewHolder {
                     // TODO 为不同优先级设置不同颜色
                     if (note.getPriority() == 2) {
                         contentText.setTextColor(Color.rgb(255, 246, 143));
-                        contentText.setBackgroundColor(Color.rgb(135, 206, 250));
+                        contentText.setBackgroundColor(Color.rgb(153,204,255));
                     } else if (note.getPriority() == 3) {
                         contentText.setTextColor(Color.rgb(205, 92, 92));
-                        contentText.setBackgroundColor(Color.rgb(135, 206, 250));
+                        contentText.setBackgroundColor(Color.rgb(153,204,255));
                     } else {
                         contentText.setTextColor(Color.rgb(202, 255, 112));
-                        contentText.setBackgroundColor(Color.rgb(135, 206, 250));
+                        contentText.setBackgroundColor(Color.rgb(153,204,255));
                     }
                     contentText.setPaintFlags(contentText.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
                 }
@@ -91,14 +93,14 @@ public class NoteViewHolder extends RecyclerView.ViewHolder {
             // TODO 为不同优先级设置不同颜色
             if (note.getPriority() == 2) {
                 contentText.setTextColor(Color.rgb(255,246,143));
-                contentText.setBackgroundColor(Color.rgb(135,206,250));
+                contentText.setBackgroundColor(Color.rgb(153,204,255));
             } else if (note.getPriority() == 3){
                 contentText.setTextColor(Color.rgb(205,92 ,92));
-                contentText.setBackgroundColor(Color.rgb(135,206,250));
+                contentText.setBackgroundColor(Color.rgb(153,204,255));
             }
             else {
                 contentText.setTextColor(Color.rgb(	202,255,112));
-                contentText.setBackgroundColor(Color.rgb(135,206,250));
+                contentText.setBackgroundColor(Color.rgb(153,204,255));
             }
             contentText.setPaintFlags(contentText.getPaintFlags() & ~Paint.STRIKE_THRU_TEXT_FLAG);
         }

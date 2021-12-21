@@ -35,17 +35,6 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_add_white_24dp" />
 
-    <ImageButton
-        android:id="@+id/tomatoClock"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom|center"
-
-        android:backgroundTint="#FAF8F8"
-        android:tint="#B7BF2A2A"
-        android:visibility="visible"
-        app:srcCompat="@drawable/icon_tomato" />
-
 
 </android.support.design.widget.CoordinatorLayout>
 
