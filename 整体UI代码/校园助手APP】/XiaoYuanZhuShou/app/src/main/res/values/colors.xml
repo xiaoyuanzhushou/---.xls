@@ -21,6 +21,8 @@
     <color name="orange">#ff9100</color>
     <color name="deepOrange">#ff3d00</color>
     <color name="lightBlue">#2196f3</color>
+    <color name="grey">#9aa3a3a3</color>
+    <color name="colorAccent">#fa6278</color>
 
     <color name="nodeIndex" >#00000000</color>
 

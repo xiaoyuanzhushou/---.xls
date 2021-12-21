@@ -2,17 +2,26 @@ package com.example.xiaoyuanzhushou.ui.home
 
 import android.app.Application
 import android.net.Uri
+import android.system.Os.remove
 import android.util.Log
+import androidx.core.content.edit
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.xiaoyuanzhushou.AppDatabase
+import com.example.xiaoyuanzhushou.R
 import com.example.xiaoyuanzhushou.courseTable.message.*
+import com.example.xiaoyuanzhushou.courseTable.tools.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
 import java.util.*
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import biweekly.Biweekly
+import biweekly.ICalVersion
+import biweekly.ICalendar
 
 class HomeViewModel (application: Application) : AndroidViewModel(application) {
 
@@ -171,4 +180,3 @@ class HomeViewModel (application: Application) : AndroidViewModel(application) {
             }
         }
     }
-}
