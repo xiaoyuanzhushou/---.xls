@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.xiaoyuanzhushou.R
+import com.example.xiaoyuanzhushou.courseTable.tools.UpdateUtils
 
 import com.example.xiaoyuanzhushou.databinding.FragmentHomeBinding
 import kotlinx.coroutines.NonCancellable
@@ -34,6 +35,8 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textHome
+
+
 
         return root
     }

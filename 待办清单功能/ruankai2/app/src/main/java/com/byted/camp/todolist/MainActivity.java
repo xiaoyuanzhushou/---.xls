@@ -28,8 +28,8 @@ import com.byted.camp.todolist.beans.Note;
 import com.byted.camp.todolist.beans.State;
 import com.byted.camp.todolist.db.TodoContract;
 import com.byted.camp.todolist.db.TodoDbHelper;
-import com.byted.camp.todolist.operation.activity.DatabaseActivity;
-import com.byted.camp.todolist.operation.activity.DebugActivity;
+//import com.byted.camp.todolist.operation.activity.DatabaseActivity;
+//import com.byted.camp.todolist.operation.activity.DebugActivity;
 import com.byted.camp.todolist.operation.activity.SettingActivity;
 import com.byted.camp.todolist.ui.NoteListAdapter;
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        // 接口NoteOperator作为函数形参
+        /* 接口NoteOperator作为函数形参,同时实现NoteOperator */
         notesAdapter = new NoteListAdapter(new NoteOperator() {
             @Override
             public void deleteNote(Note note) {
@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        /* 获取设置中的排序开关值 */
         SharedPreferences sp2 = TodoListApplication.getContext().getSharedPreferences("sort",Context.MODE_MULTI_PROCESS);
         boolean isOpen = sp2.getBoolean("isopen",false);
         if(isOpen){
@@ -159,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_TomatoClock:
                 startActivity(new Intent(this,TomatoActivity.class));
                 return true;
+
                 //case R.id.action_debug:
             //    startActivity(new Intent(this, DebugActivity.class));
             //    return true;
