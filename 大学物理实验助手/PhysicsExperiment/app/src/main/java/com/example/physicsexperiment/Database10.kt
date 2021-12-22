@@ -73,4 +73,20 @@ class Database10 {
         this.deltalambda = deltalambda
         this.E2 = E2
     }
+
+    fun dataProcess(){
+
+        /**
+         * 计算部分
+         */
+        deltad = (X1[0]-X0[0]+X1[1]-X0[1]+X1[2]-X0[2]+X1[3]-X0[3])/4
+
+        lambda = 2*deltad/40
+
+        E1= sqrt((lambda-lambdaS)*(lambda-lambdaS))/lambdaS
+
+        deltalambda = (averagelambda*averagelambda)/(2*deltad)
+
+        E2 = sqrt((deltalambda-deltalambdaS)*(deltalambda-deltalambdaS))/deltalambdaS
+    }
 }

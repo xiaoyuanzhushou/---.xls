@@ -345,4 +345,161 @@ class Database6 {
         this.uCJa6 = uCJa6
         this.uRJa6 = uRJa6
     }
+
+    fun dataProcess(){
+
+        /**
+         * 计算部分
+         */
+        averaged1 = (d1[0]+d1[1]+d1[2])/3
+
+        averaged2 = (d2[0]+d2[1]+d2[2])/3
+
+        averageT1 = (T1[0]+T1[1]+T1[2])/3
+
+        averageH = (H[0]+H[1]+H[2])/3
+
+        /**
+         * 下面5个单位kg/(m*m)
+         */
+        averageJ0 = (m0*9.8*averaged1*averaged2*averageT1*averageT1)/
+                (12*3.14*3.14*averageH)
+
+        averageJ1 = ((m0+m1)*9.8*averaged1*averaged2*Ta)/(12*3.14*3.14*averageH)
+
+        averageJ2 = ((m0+2*m)*9.8*averaged1*averaged2*Ta)/(12*3.14*3.14*averageH)
+
+        averageJ = averageJ1-averageJ0
+
+        averageJa = (averageJ2 - averageJ0)/2
+
+        /**
+         * m0不确定度,g
+         */
+        uAm06 = 0.0
+
+        uBm06 = 5.0/3
+
+        uCm06 = 5.0/3
+
+        uRm06 = uCm06/m0
+
+        /**
+         * m1不确定度,g
+         */
+        uAm16 = 0.0
+
+        uBm16 = 5.0/3
+
+        uCm16 = 5.0/3
+
+        /**
+         * m0+m1不确定度,g
+         */
+        uCm016 = sqrt(uCm06+uCm16)
+
+        uRm016 = uCm016/(m0+m1)
+
+        /**
+         * m0+2m不确定度,g
+         */
+        uAm6 = 0.0
+
+        uBm6 = 5.0/3
+
+        uCm6 = 5.0/3
+
+        uCm02m6 = sqrt(uCm06+4*uCm6)
+
+        uRm02m = uCm02m6/(m0+2*m)
+
+        /**
+         * D不确定度,cm
+         */
+        uAd16 = 0.000000
+
+        uBd16 = 0.05/3
+
+        uCd16 = sqrt(uAd16*uAd16+uBd16*uBd16)
+
+        uRd16 = uCd16/averageH
+
+        /**
+         * d不确定度,cm
+         */
+        uAd26 = 0.000000
+
+        uBd26 = 0.002/1.732
+
+        uCd26 = sqrt(uAd26*uAd26+uBd26*uBd26)
+
+        uRd26 = uCd26/averageH
+
+        /**
+         * H不确定度,cm
+         */
+        uAH6 = 0.000000
+
+        uBH6 = 0.05/3
+
+        uCH6 = sqrt(uAH6*uAH6+uBH6*uBH6)
+
+        uRH6 = uCH6/averageH
+
+        /**
+         * T0不确定度,s
+         */
+        uAT06 = 0.0
+
+        uBT06 = 0.2/1.732
+
+        uCT06 = 0.2/1.732
+
+        uRT06 = uCT06/T0
+
+        /**
+         * T1不确定度,s
+         */
+        uAT16 = 0.0
+
+        uBT16= 0.2/1.732
+
+        uCT16 = 0.2/1.732
+
+        uRT16 = uCT16/T0
+
+        /**
+         * Ta不确定度,s
+         */
+        uATa6 = 0.0
+
+        uBTa6 = 0.2/1.732
+
+        uCTa6 = 0.2/1.732
+
+        uRTa6 = uCTa6/T0
+
+        /**
+         * 转动惯量J0,J1,J2,J不确定度,kg/(m*m)
+         */
+        uRJ06 = sqrt(uRm06*uRm06+uRd16*uRd16+uRd26*uRd26+uRH6*uRH6+4*uRT06*uRT06)
+
+        uCJ06 = averageJ0*uRJ06
+
+        uRJ16 = sqrt(uRm016*uRm016+uRd16*uRd16+uRd26*uRd26+uRH6*uRH6+4*uRT16*uRT16)
+
+        uCJ16 = averageJ1*uRJ16
+
+        uRJ26 = sqrt(uRm02m*uRm02m+uRd16*uRd16+uRd26*uRd26+uRH6*uRH6+4*uRTa6*uRTa6)
+
+        uCJ26 = averageJ2*uRJ26
+
+        uCJ6 = sqrt(uCJ16*uCJ16+uCJ06*uCJ06)
+
+        uRJ6 = uCJ6/averageJ
+
+        uCJa6 = sqrt(uCJ26*uCJ26+uCJ06*uCJ06)/2
+
+        uRJa6 = uCJa6/averageJa
+    }
 }
