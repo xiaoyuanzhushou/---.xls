@@ -13,6 +13,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 
 import com.example.xiaoyuanzhushou.databinding.ActivityMainBinding
+import com.example.xiaoyuanzhushou.ui.home.HomeFragment
+import splitties.activities.start
 
 
 class MainActivity : AppCompatActivity() {
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
 
 
     }

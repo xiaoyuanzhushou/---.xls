@@ -6,6 +6,7 @@ import android.accounts.NetworkErrorException
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import com.example.xiaoyuanzhushou.AppDatabase
+import com.example.xiaoyuanzhushou.R
 
 
 import kotlinx.coroutines.Dispatchers
@@ -178,7 +179,7 @@ class ImportCourse (application: Application) : AndroidViewModel(application){
 
                     baseList.add(CourseBaseBean(
                         id = baseList.size, courseName = lclass.replace(Regex("\\([a-zA-Z0-9.]+\\).*").find(lclass)!!.value, ""),
-                        tableId = importId))
+                        tableId = importId, color = "light_blue_600"))
                 } else {//课程同，但其他的出现了不同，就要写detail
                     lstartendweek.clear()
                     lteacher = matchRs.group(1)
