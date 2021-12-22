@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.xiaoyuanzhushou">
 
     <application
@@ -10,16 +11,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.XiaoYuanZhuShou">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.XiaoYuanZhuShou.NoActionBar">
+            android:name=".ui.home.BaseDialogFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ui.home.MultiCourseFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/app_name"-->
+<!--            android:theme="@style/Theme.XiaoYuanZhuShou.NoActionBar">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity
+            android:name=".ui.home.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.home.HomeFragment" />
+
+
+
+        <activity
+            android:name=".courseTable.course_add.AddCourseActivity"
+            android:label="添加课程"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="Instantiatable" />
+
     </application>
 
 </manifest>

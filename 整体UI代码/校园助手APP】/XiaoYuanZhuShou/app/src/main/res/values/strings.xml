@@ -15,4 +15,41 @@
     <string name="menu_assistant">大学物理实验助手</string>
     <string name="menu_score">学分积查询</string>
     <string name="menu_leave">leave功能</string>
+
+
+    <string name="setting_widget_item_height">小部件格子高度</string>
+    <string name="setting_widget_item_alpha">小部件格子不透明度</string>
+    <string name="setting_widget_text_size">小部件显示文字大小</string>
+    <string name="setting_widget_header_color">小部件标题颜色</string>
+    <string name="setting_widget_course_text_color">小部件课程颜色</string>
+    <string name="setting_widget_stroke_color">小部件格子边框颜色</string>
+
+
+    <string name="error_course_data">检测到课程数据有误，请仔细核对</string>
+    <string name="error_course_node">有课程的节数大于课表的最大节数</string>
+
+    <string name="icon_location" translatable="false"></string>
+    <string name="icon_back" translatable="false"></string>
+    <string name="icon_send" translatable="false"></string>
+    <string name="icon_share" translatable="false"></string>
+    <string name="icon_more" translatable="false"></string>
+    <string name="icon_close" translatable="false"></string>
+    <string name="icon_heart" translatable="false"></string>
+    <string name="icon_date" translatable="false"></string>
+    <string name="icon_delete" translatable="false"></string>
+    <string name="icon_upload" translatable="false"></string>
+    <string name="icon_clock" translatable="false"></string>
+    <string name="icon_setting" translatable="false"></string>
+    <string name="icon_search" translatable="false"></string>
+    <string name="icon_info" translatable="false"></string>
+    <string name="icon_refresh" translatable="false"></string>
+    <string name="icon_add" translatable="false"></string>
+    <string name="icon_done" translatable="false"></string>
+    <string name="icon_doc" translatable="false"></string>
+    <string name="icon_msg" translatable="false"></string>
+    <string name="icon_download" translatable="false"></string>
+    <string name="icon_star" translatable="false"></string>
+    <string name="icon_person" translatable="false"></string>
+    <string name="icon_nav" translatable="false"></string>
+    <string name="cancel">取消</string>
 </resources>

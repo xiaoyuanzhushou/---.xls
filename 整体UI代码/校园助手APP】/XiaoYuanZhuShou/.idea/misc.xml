@@ -3,14 +3,48 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/Toasty/app/src/main/res/layout/activity_main.xml" value="0.21829710144927536" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/card_bg.xml" value="0.26927083333333335" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/course_back.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/course_item_bg_today.xml" value="0.23425925925925925" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/ic_menu_camera.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.17407407407407408" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.17407407407407408" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/ic_schedule_empty.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/main_background_2020_1.xml" value="0.23425925925925925" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/mask_with_radius.xml" value="0.23425925925925925" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/select_textview_bg.xml" value="0.23425925925925925" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/side_nav_bar.xml" value="0.25925925925925924" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/splash.xml" value="0.23425925925925925" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/drawable/week_selected_bg.xml" value="0.23425925925925925" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/activity_base_dialog_fragment.xml" value="0.14719202898550723" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/activity_main.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/activity_multi_course_fragment.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/chip_group_item_choice.xml" value="0.21829710144927536" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/content_main.xml" value="0.20168066580377575" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragement_color_picker.xml" value="0.1" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_color_picker.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_course_detail.xml" value="0.4033613316075515" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_edit_detail.xml" value="0.21829710144927536" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_gallery.xml" value="0.15942028985507245" />
         <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_home.xml" value="0.26621847886098404" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_multi_course.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_select_time.xml" value="0.21829710144927536" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_select_week.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/fragment_slideshow.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_add_course_base.xml" value="0.21829710144927536" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_add_course_detail.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_schedule_widget.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_select_week.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_table_list.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_table_select_main.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/item_time_detail.xml" value="0.15353260869565216" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/nav_header.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/nav_header_main.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/schedule_app_widget.xml" value="0.18568840579710144" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/layout/today_course_app_widget.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/menu/main.xml" value="0.253125" />
+        <entry key="..\:/Users/szy/AndroidStudioProjects/XiaoYuanZhuShou/app/src/main/res/menu/main_navigation_menu.xml" value="0.253125" />
       </map>
     </option>
   </component>

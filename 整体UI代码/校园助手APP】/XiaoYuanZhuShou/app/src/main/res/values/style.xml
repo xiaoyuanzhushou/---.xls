@@ -18,4 +18,44 @@
         <item name="android:gravity">center</item>
         <item name="android:background">@color/nodeIndex</item>
     </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@drawable/splash</item>
+    </style>
+
+    <style name="settings_item_ll">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ButtonBackground">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="settings_item_tv_main">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="DialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IconTextViewStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/iconfont</item>
+    </style>
+    <attr name="verticalRecyclerViewStyle" format="reference" />
+
 </resources>
