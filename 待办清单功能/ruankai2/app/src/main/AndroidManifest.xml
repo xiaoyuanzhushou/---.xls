@@ -15,7 +15,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.example.tomatoclock.activity.DatabaseActivity"></activity>
         <activity android:name=".operation.activity.SettingActivity" />
         <activity
             android:name=".MainActivity"
@@ -27,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.tomatoclock.activity.DebugActivity" />
         <activity android:name=".NoteActivity" />
         <activity android:name=".TomatoActivity" />
     </application>

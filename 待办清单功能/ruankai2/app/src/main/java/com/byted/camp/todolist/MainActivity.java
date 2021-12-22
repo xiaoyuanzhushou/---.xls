@@ -22,14 +22,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.byted.camp.todolist.beans.Note;
 import com.byted.camp.todolist.beans.State;
 import com.byted.camp.todolist.db.TodoContract;
 import com.byted.camp.todolist.db.TodoDbHelper;
-//import com.byted.camp.todolist.operation.activity.DatabaseActivity;
-//import com.byted.camp.todolist.operation.activity.DebugActivity;
 import com.byted.camp.todolist.operation.activity.SettingActivity;
 import com.byted.camp.todolist.ui.NoteListAdapter;
 
@@ -76,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                         REQUEST_CODE_ADD);
             }
         });
+
 
         //番茄图标监听器
         /*

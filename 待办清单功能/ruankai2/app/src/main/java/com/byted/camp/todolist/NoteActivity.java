@@ -28,7 +28,6 @@ import java.util.Locale;
 
 public class NoteActivity extends AppCompatActivity{
 
-    private Toolbar noteToolBar;
     private EditText editText;
     private Button addBtn;
     private int priority=1;
@@ -37,8 +36,7 @@ public class NoteActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
-        noteToolBar = (Toolbar) findViewById(R.id.baseToolbar);
-       
+
 
         setTitle(R.string.take_a_note);
 
