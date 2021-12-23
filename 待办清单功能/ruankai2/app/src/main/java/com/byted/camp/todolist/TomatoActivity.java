@@ -61,7 +61,7 @@ public class TomatoActivity extends AppCompatActivity {
     private MyCountDownTimer mc;
     private TickProgressBar mProgressBar;
     private RippleWrapper mRippleWrapper;
-    private long mLastClickTime = 0;
+
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,7 +89,7 @@ public class TomatoActivity extends AppCompatActivity {
 
 
 
-        //tv = (TextView)findViewById(R.id.text_time_title);
+
         mProgressBar = findViewById(R.id.tick_progress_bar);
         mRippleWrapper = findViewById(R.id.ripple_wrapper);
 
@@ -324,6 +324,14 @@ public class TomatoActivity extends AppCompatActivity {
         @Override
             public void onFinish() {
                 tv.setText("已结束");
+                mBtnStart.setVisibility(View.VISIBLE);
+                mBtnPause.setVisibility(View.GONE);
+                mBtnResume.setVisibility(View.GONE);
+                updateSceneButtons();
+                //computer.setImageDrawable(getResources().getDrawable(R.drawable.ic_laptop_mac_white_24dp));
+                //cafe.setImageDrawable(getResources().getDrawable(R.drawable.ic_local_cafe_white_24dp));
+                //couch.setImageDrawable(getResources().getDrawable(R.drawable.ic_weekend_white_24dp));
+                mc.cancel();
             }
 
             @Override
@@ -333,10 +341,10 @@ public class TomatoActivity extends AppCompatActivity {
                 Log.i("MainActivity", mRemainingTime  + "");
                 mRemainingTime = millisUntilFinished;
 
-                if((mRemainingTime  / 1000) % 60 < 10) {
-                    secondsPart = "0" + mRemainingTime  / 1000 % 60 ;
+                if( Math.round((double)mRemainingTime  / 1000) % 60 < 10) {
+                    secondsPart = "0" + Math.round((double)mRemainingTime  / 1000) % 60 ;
                 }else{
-                    secondsPart = String.valueOf(Math.round( mRemainingTime  / 1000) % 60 );
+                    secondsPart = String.valueOf(Math.round( (double)mRemainingTime  / 1000) % 60 );
                 }
 
                 tv.setText(""+ mRemainingTime  / 1000 / 60 +":"+ secondsPart );

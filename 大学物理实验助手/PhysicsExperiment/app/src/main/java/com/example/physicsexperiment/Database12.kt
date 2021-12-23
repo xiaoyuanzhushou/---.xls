@@ -80,4 +80,27 @@ class Database12 {
         this.lambda = lambda
         this.E = E
     }
+
+    fun dataProcess(){
+
+        /**
+         * 计算部分
+         */
+        averaged1 = sqrt((d1[0]-d1[1])*(d1[0]-d1[1]))
+
+        averageL = sqrt((L[0]-L[1])*(L[0]-L[1]))
+
+        averaged2 = sqrt((d2[0]-d2[1])*(d2[0]-d2[1]))
+
+        averaged = sqrt(averaged1*averaged2)
+
+        averageD = ((sqrt(averaged1)+ sqrt(averaged2))*averageL)/
+                sqrt((sqrt(averaged2)- sqrt(averaged1))*(sqrt(averaged2)- sqrt(averaged1)))
+
+        deltaX = (deltaX11*deltaX1)/10
+
+        lambda= (averaged*deltaX)/averageD
+
+        E = 0.000000
+    }
 }

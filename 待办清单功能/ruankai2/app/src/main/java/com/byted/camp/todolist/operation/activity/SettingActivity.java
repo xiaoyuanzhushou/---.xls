@@ -17,7 +17,7 @@ public class SettingActivity extends AppCompatActivity {
     private static final String KEY_IS_NEED_SORT = "is_need_sort";
 
     private Switch commentSwitch;
-    private SharedPreferences mSharedPreferences;
+    private SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class SettingActivity extends AppCompatActivity {
         //todo 从sp读出数据更新isOpen字段
 
         //指定该SharedPreferences数据只能被本应用程序读
-       SharedPreferences sp = TodoListApplication.getContext().getSharedPreferences("sort",Context.MODE_MULTI_PROCESS);
+        sp = TodoListApplication.getContext().getSharedPreferences("sort",Context.MODE_MULTI_PROCESS);
 
         commentSwitch = findViewById(R.id.switch_comment);
         commentSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

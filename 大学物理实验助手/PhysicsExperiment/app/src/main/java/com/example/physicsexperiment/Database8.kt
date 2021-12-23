@@ -64,4 +64,29 @@ class Database8 {
         this.uCE8 = uCE8
         this.uRE8 = uRE8
     }
+
+    fun dataProcess(){
+
+        /**
+         * 计算部分
+         */
+        averageLac8 = (Lac[0]+Lac[1]+Lac[2]+Lac[3]+Lac[4])/5
+
+        E8 = U*averageLac8
+
+        /**
+         * 不确定度
+         */
+        tem8 = (Lac[0]-averageLac8)*(Lac[0]-averageLac8)+
+                (Lac[1]-averageLac8)*(Lac[1]-averageLac8)+(Lac[2]-averageLac8)*(Lac[2]-averageLac8)+
+                (Lac[3]-averageLac8)*(Lac[3]-averageLac8)+(Lac[4]-averageLac8)*(Lac[4]-averageLac8)
+
+        uALac8 = 1.14*(tem8/20)
+
+        uCLac8 = uALac8
+
+        uCE8 = sqrt(U*U*uCLac8*uCLac8)
+
+        uRE8 = uCE8/E8
+    }
 }

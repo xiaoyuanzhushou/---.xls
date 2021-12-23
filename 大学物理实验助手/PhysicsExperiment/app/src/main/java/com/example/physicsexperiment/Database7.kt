@@ -101,4 +101,43 @@ class Database7 {
         this.uRB7 = uRB7
         this.uCB7 = uCB7
     }
+
+    fun dataProcess(){
+
+        /**
+         * 计算部分,cm
+         */
+        UH7 = arrayOf((U1[0]+U2[0])/2,(U1[1]+U2[1])/2
+            ,(U1[2]+U2[2])/2,(U1[3]+U2[3])/2,(U1[4]+U2[4])/2)
+
+        averageUH7 = (UH7[0]+UH7[1]+UH7[2]+UH7[3]+UH7[4])/5
+
+        B7 = averageUH7/(KH*I2)
+
+        /**
+         * UH不确定度
+         */
+        uAUH7 = 0.000000
+
+        uBUH7 = 0.0
+
+        uCUH7 = sqrt(uAUH7*uAUH7+uBUH7*uBUH7)
+
+        /**
+         * I(i2)不确定度,mA
+         */
+        uAI7 = 0.0
+
+        uBI7 = 0.1/1.732
+
+        uCI7 = uBI7
+
+        /**
+         * B不确定度
+         */
+        uRB7 = 0.000000
+
+        uCB7 = B7*uRB7
+    }
+
 }

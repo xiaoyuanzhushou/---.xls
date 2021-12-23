@@ -93,4 +93,34 @@ class Database11 {
         this.uRepsilonX = uRepsilonX
         this.uCepsilonX = uCepsilonX
     }
+
+    fun dataProcess(){
+
+        /**
+         * 计算部分
+         */
+        deltaR = arrayOf(((RbUp[3]+RbDown[3])-(RbUp[0]+RbDown[0]))/2,
+            ((RbUp[4]+RbDown[4])-(RbUp[1]+RbDown[1]))/2,((RbUp[5]+RbDown[5])-(RbUp[2]+RbDown[2]))/2)
+
+        averageDeltaR = (((RbUp[3]+RbDown[3])-(RbUp[0]+RbDown[0]))/2+
+                ((RbUp[4]+RbDown[4])-(RbUp[1]+RbDown[1]))/2+
+                ((RbUp[5]+RbDown[5])-(RbUp[2]+RbDown[2]))/2)/3
+
+        epsilonX = 0.000000
+
+        /**
+         * 不确定度,Ω
+         */
+        tem11 = (deltaR[0]-averageDeltaR)+(deltaR[1]-averageDeltaR)+(deltaR[2]-averageDeltaR)
+
+        uAdeltaR = 1.32*(tem11/6)
+
+        uBdeltaR = 0.014444
+
+        uCdeltaR = sqrt(uAdeltaR*uAdeltaR+uBdeltaR*uBdeltaR)
+
+        uRepsilonX = 0.000000
+
+        uCepsilonX = 0.000000
+    }
 }
