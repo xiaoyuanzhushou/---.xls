@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var button11: Button = findViewById(R.id.button11)
-        button11.setOnClickListener{
+        var button1: Button = findViewById(R.id.button1)
+        button1.setOnClickListener{
             Toast.makeText(applicationContext, "自己慢慢算吧", Toast.LENGTH_LONG).show()
         }
 
