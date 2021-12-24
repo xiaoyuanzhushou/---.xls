@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         var button1: Button = findViewById(R.id.button1)
         button1.setOnClickListener{
-            Database1.dataProcess()
+
 
         }
     }
