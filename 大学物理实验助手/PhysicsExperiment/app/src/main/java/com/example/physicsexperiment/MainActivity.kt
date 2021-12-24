@@ -2,10 +2,18 @@ package com.example.physicsexperiment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var button1: Button = findViewById(R.id.button1)
+        button1.setOnClickListener{
+            Database1.dataProcess()
+
+        }
     }
 }
