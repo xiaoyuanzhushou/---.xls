@@ -283,94 +283,94 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageViewE21uCb"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="810dp"
-            android:src="@mipmap/e2ucb"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/imageViewE21uCb"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="810dp"
+                    android:src="@mipmap/e2ucb"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewE21uCb"
-            android:layout_width="110dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="810dp"
-            android:gravity="center"
-            android:text="textview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textViewE21uCb"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="810dp"
+                    android:gravity="center"
+                    android:text="textview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageViewE21uCl"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="870dp"
-            android:src="@mipmap/e2ucls"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/imageViewE21uCl"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="870dp"
+                    android:src="@mipmap/e2ucls"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewE21uCl"
-            android:layout_width="110dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="870dp"
-            android:gravity="center"
-            android:text="textview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textViewE21uCl"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="870dp"
+                    android:gravity="center"
+                    android:text="textview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageViewE21E"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="930dp"
-            android:src="@mipmap/e2e"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/imageViewE21E"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="930dp"
+                    android:src="@mipmap/e2e"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewE21E"
-            android:layout_width="110dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="930dp"
-            android:gravity="center"
-            android:text="textview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textViewE21E"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="930dp"
+                    android:gravity="center"
+                    android:text="textview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageViewE21uRE"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="990dp"
-            android:src="@mipmap/e2ure"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/imageViewE21uRE"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="990dp"
+                    android:src="@mipmap/e2ure"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewE21uRE"
-            android:layout_width="110dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="990dp"
-            android:gravity="center"
-            android:text="textview"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textViewE21uRE"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="990dp"
+                    android:gravity="center"
+                    android:text="textview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageViewE21uCE"
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="1050dp"
-            android:src="@mipmap/e2uce"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                        <ImageView
+                            android:id="@+id/imageViewE21uCE"
+                            android:layout_width="300dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="1050dp"
+                            android:src="@mipmap/e2uce"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textViewE21uCE"
