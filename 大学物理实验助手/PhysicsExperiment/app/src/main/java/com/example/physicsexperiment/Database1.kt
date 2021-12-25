@@ -1,5 +1,6 @@
 package com.example.physicsexperiment
 
+import kotlin.math.abs
 import kotlin.math.sqrt
 
 /**
@@ -20,7 +21,7 @@ open class Database1 {
 
     var t: Int = 0
 
-    var Xi: Array<Int> = arrayOf(0,1,2,3,4,5,6,7,8,9)
+    var Xi: List<Int> = listOf(0,1,2,3,4,5,6,7,8,9)
 
     var L: List<Int> = listOf(0,0,0,0,0)
 
@@ -66,24 +67,7 @@ open class Database1 {
 
     var E1: Double = 0.0
 
-    constructor(
-        f: Int,
-        t: Int,
-        Xi: Array<Int>,
-        L: List<Int>,
-        averageL: Int,
-        LiAverageL: List<Int>,
-        lambda: Double,
-        V: Double,
-        temL1: Double,
-        uAL1: Double,
-        uBL1: Double,
-        uCL1: Double,
-        uLambda1: Double,
-        uV1: Double,
-        Vt1: Double,
-        E1: Double
-    ) {
+    constructor() {
         this.f = f
         this.t = t
         this.Xi = Xi
@@ -122,8 +106,9 @@ open class Database1 {
         /**
          * L-A类不确定度
          */
-         temL1 = ((L[0]-averageL)*(L[1]-averageL)*(L[2]-averageL)
-                *(L[3]-averageL)*(L[4]-averageL)).toDouble()
+         temL1 = ((L[0]-averageL)*(L[0]-averageL))+((L[1]-averageL)*(L[1]-averageL))+
+                 ((L[2]-averageL) *(L[2]-averageL))+((L[3]-averageL)*(L[3]-averageL))+
+                 ((L[4]-averageL)*(L[4]-averageL)).toDouble()
 
          uAL1 = 1.14* sqrt(0.05*temL1)
 
@@ -152,7 +137,7 @@ open class Database1 {
          */
          Vt1 = V*sqrt(t/273.15+1)
 
-         E1 = sqrt(V-Vt1)/Vt1
+         E1 = abs((V-Vt1))/Vt1
 
     }
 }
