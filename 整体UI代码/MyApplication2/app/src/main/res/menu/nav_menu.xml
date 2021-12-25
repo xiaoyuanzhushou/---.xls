@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/navCourse"
+        android:icon="@mipmap/course_ic"
+        android:title="课程表"/>
+    <item
+        android:id="@+id/navTodolist"
+        android:icon="@mipmap/ic_todolist"
+        android:title="任务清单"/>
+    <item
+        android:id="@+id/navAssistant"
+        android:icon="@mipmap/ic_assistant"
+        android:title="大学物理实验助手"/>
+    <item
+        android:id="@+id/navScore"
+        android:icon="@mipmap/ic_score"
+        android:title="学分积查询"/>
+    <item android:title="other">
+        <menu>
+            <item
+                android:id="@+id/menu_account"
+                android:icon="@mipmap/ic_account"
+                android:title="账户" />
+            <item
+                android:id="@+id/menu_about"
+                android:icon="@mipmap/about"
+                android:title="关于" />
+        </menu>
+    </item>
+
+
+
+
+</group>
+
+
+</menu>
