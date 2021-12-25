@@ -274,7 +274,9 @@ class Database2 {
 
         averageD = (D[0]+D[1]+D[2]+D[3]+D[4]+D[5]+D[6]+D[7]+D[8]+D[9])/10
 
-        deltaD = arrayOf(D[0]-averageD,D[1]-averageD,D[2]-averageD,D[3]-averageD)
+        deltaD = arrayOf(D[0]-averageD,D[1]-averageD,D[2]-averageD,D[3]-averageD,
+            D[4]-averageD,D[5]-averageD,D[6]-averageD,
+            D[7]-averageD,D[8]-averageD,D[9]-averageD)
 
         H = arrayOf(sqrt((X1[0]-X2[0])*(X1[0]-X2[0]))
             ,sqrt((X1[1]-X2[1])*(X1[1]-X2[1])),sqrt((X1[2]-X2[2])*(X1[2]-X2[2]))
@@ -302,7 +304,7 @@ class Database2 {
          */
         temD2 = ((deltaD[0]*deltaD[0])+(deltaD[1]*deltaD[1])+(deltaD[2]*deltaD[2])
                 +(deltaD[3]*deltaD[3])+(deltaD[4]*deltaD[4])+(deltaD[5]*deltaD[5])
-                +(deltaD[6]*deltaD[6]) +(deltaD[7]*deltaD[7])+(deltaD[8]*deltaD[8])
+                +(deltaD[6]*deltaD[6])+(deltaD[7]*deltaD[7])+(deltaD[8]*deltaD[8])
                 +(deltaD[9]*deltaD[9]))
 
         uAD2 = 1.06* sqrt(temD2/90)
