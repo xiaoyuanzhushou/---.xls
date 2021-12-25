@@ -14,11 +14,10 @@ public class OneActivity extends AppCompatActivity {
 
     static Database1 database11 = new Database1();
     static Database1 database12 = new Database1();
-    static Database2 database2 = new Database2();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.experiment01);
 
         Button button1 = findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -184,7 +183,7 @@ public class OneActivity extends AppCompatActivity {
         database12.dataProcess();
     }
 
-    public void initDatas2(){
+    /*public void initDatas2(){
 
         //获取aup1
         TextView textaup1 = findViewById(R.id.E21aup1);
@@ -369,7 +368,7 @@ public class OneActivity extends AppCompatActivity {
         database2.setB(b);
         database2.setL(L);
         database2.dataProcess();
-    }
+    }*/
 
     @Override
     protected void onDestroy() {

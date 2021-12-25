@@ -10,9 +10,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TwoActivity extends AppCompatActivity {
 
+    static Database2 database2 = new Database2();
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.experiment02);
 
         Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -203,13 +205,13 @@ public class TwoActivity extends AppCompatActivity {
         Double[] X1down = new Double[]{X1down1,X1down2,X1down3,X1down4,X1down5};
         Double[] b = new Double[]{b1,b2,b3,b4,b5};
 
-        OneActivity.database2.setAUp(aup);
-        OneActivity.database2.setADown(adown);
-        OneActivity.database2.setD(D);
-        OneActivity.database2.setX1(X1up);
-        OneActivity.database2.setX2(X1down);
-        OneActivity.database2.setB(b);
-        OneActivity.database2.setL(L);
-        OneActivity.database2.dataProcess();
+        database2.setAUp(aup);
+        database2.setADown(adown);
+        database2.setD1(D);
+        database2.setX1(X1up);
+        database2.setX2(X1down);
+        database2.setB(b);
+        database2.setL(L);
+        database2.dataProcess();
     }
 }
