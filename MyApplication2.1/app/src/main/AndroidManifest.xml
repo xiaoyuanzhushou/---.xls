@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <application
+        android:name=".TodoListApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="校园助手"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".CourseTable.Activity.ImportCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".todolist.operation.activity.SettingActivity" />
+        <activity android:name=".todolist.NoteActivity" />
+        <activity android:name=".todolist.TodoList" />
+        <activity android:name=".todolist.TomatoActivity" />
+        <activity android:name=".assistant.OneActivity" />
+        <activity android:name=".assistant.AssistantMainActivity" />
+        <activity android:name=".assistant.ResultOneActivity" />
+        <activity android:name=".assistant.ResultTwoActivity" />
+        <activity android:name=".assistant.TwoActivity" />
+        <activity android:name=".assistant.Acti.Activity03"/>
+        <activity android:name=".assistant.Acti.Activity04"/>
+        <activity android:name=".assistant.Acti.Activity06"/>
+        <activity android:name=".assistant.Acti.Activity07"/>
+        <activity android:name=".assistant.Acti.Activity08"/>
+        <activity android:name=".assistant.Acti.Activity09"/>
+        <activity android:name=".assistant.Acti.Activity10"/>
+        <activity android:name=".assistant.Acti.Activity11"/>
+        <activity android:name=".assistant.Acti.Activity12"/>
+        <activity android:name=".xuefenji.MainActivityXuefenji"/>
+        <activity android:name=".xuefenji.ScoreActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+    tools:context=".assistant.AssistantMainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/E2topic"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="大学物理实验3\n伏安特性研究"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/E31topic"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="1:U1-I原始数据记录"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="序号"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip11"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip12"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:text="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip13"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:text="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip14"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:text="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip15"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="290dp"
+            android:gravity="center"
+            android:text="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip16"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="330dp"
+            android:gravity="center"
+            android:text="6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip17"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="370dp"
+            android:gravity="center"
+            android:text="7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip18"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="410dp"
+            android:gravity="center"
+            android:text="8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="I/mA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I5"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="290dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I6"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="330dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I7"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="370dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31I8"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="410dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E31tip3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="U1/V"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U11"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U12"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U13"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U14"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U15"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="290dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U16"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="330dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U17"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="370dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E31U18"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="410dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32topic"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="450dp"
+            android:gravity="center"
+            android:text="2:UA-I原始数据记录"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="480dp"
+            android:gravity="center"
+            android:text="序号"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip11"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="510dp"
+            android:gravity="center"
+            android:text="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip12"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="550dp"
+            android:gravity="center"
+            android:text="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip13"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="590dp"
+            android:gravity="center"
+            android:text="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip14"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="630dp"
+            android:gravity="center"
+            android:text="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip15"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="670dp"
+            android:gravity="center"
+            android:text="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip16"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="710dp"
+            android:gravity="center"
+            android:text="6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip17"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="750dp"
+            android:gravity="center"
+            android:text="7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip18"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="790dp"
+            android:gravity="center"
+            android:text="8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="480dp"
+            android:gravity="center"
+            android:text="I/mA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="510dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="550dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="590dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="630dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I5"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="670dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I6"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="710dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I7"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="750dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32I8"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="790dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/E32tip3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="480dp"
+            android:gravity="center"
+            android:text="UA/V"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="510dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="550dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="590dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="630dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA5"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="670dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA6"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="710dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA7"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="750dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/E32UA8"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="790dp"
+            android:gravity="center"
+            android:hint="请输入"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="860dp"
+            android:text="数据处理"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
