@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:gravity="center"
-            android:text="大学物理实验3\n伏安特性研究"
+            android:text="大学物理实验6\n三线摆测转动惯量"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

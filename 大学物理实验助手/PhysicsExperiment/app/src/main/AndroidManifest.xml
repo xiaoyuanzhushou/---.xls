@@ -22,6 +22,15 @@
 
         <activity android:name=".OneActivity"/>
         <activity android:name=".TwoActivity"/>
+        <activity android:name=".Activity03"/>
+        <activity android:name=".Activity04"/>
+        <activity android:name=".Activity06"/>
+        <activity android:name=".Activity07"/>
+        <activity android:name=".Activity08"/>
+        <activity android:name=".Activity09"/>
+        <activity android:name=".Activity10"/>
+        <activity android:name=".Activity11"/>
+        <activity android:name=".Activity12"/>
         <activity android:name=".ResultOneActivity"/>
         <activity android:name=".ResultTwoActivity"/>
     </application>
