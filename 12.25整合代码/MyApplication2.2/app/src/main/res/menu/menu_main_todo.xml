@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.todolist.TodoList"
+    >
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="104"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+<!--    <item-->
+<!--        android:id="@+id/action_TomatoClock"-->
+<!--        android:orderInCategory="105"-->
+<!--        android:title="@string/action_TomatoClock" />-->
+
+</menu>
