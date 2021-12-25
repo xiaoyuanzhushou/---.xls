@@ -26,7 +26,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
-            android:src="@mipmap/E2uAD"
+            android:src="@mipmap/e2uad"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +47,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="90dp"
-            android:src="@mipmap/E2uBD"
+            android:src="@mipmap/e2ubd"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,7 +67,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="150dp"
-            android:src="@mipmap/E2uAx"
+            android:src="@mipmap/e2uax"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,7 +87,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="210dp"
-            android:src="@mipmap/E2uBx"
+            android:src="@mipmap/e2ubx"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -107,7 +107,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="270dp"
-            android:src="@mipmap/E2uCx"
+            android:src="@mipmap/e2ucx"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -127,7 +127,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="330dp"
-            android:src="@mipmap/E2uAH"
+            android:src="@mipmap/e2uah"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,7 +147,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="390dp"
-            android:src="@mipmap/E2uBH"
+            android:src="@mipmap/e2ubh"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -167,7 +167,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="450dp"
-            android:src="@mipmap/E2uCH"
+            android:src="@mipmap/e2uch"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -188,7 +188,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="510dp"
-            android:src="@mipmap/E2uAL"
+            android:src="@mipmap/e2ual"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -208,7 +208,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="570dp"
-            android:src="@mipmap/E2uBL"
+            android:src="@mipmap/e2ubl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -228,7 +228,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="630dp"
-            android:src="@mipmap/E2uCL"
+            android:src="@mipmap/e2ucl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -248,7 +248,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="690dp"
-            android:src="@mipmap/E2uAb"
+            android:src="@mipmap/e2uab"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -268,7 +268,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="750dp"
-            android:src="@mipmap/E2uBb"
+            android:src="@mipmap/e2ubb"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -288,7 +288,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="810dp"
-            android:src="@mipmap/E2uCb"
+            android:src="@mipmap/e2ucb"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -308,7 +308,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="870dp"
-            android:src="@mipmap/E2uCLs"
+            android:src="@mipmap/e2ucls"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -328,7 +328,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="930dp"
-            android:src="@mipmap/E2E"
+            android:src="@mipmap/e2e"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -348,7 +348,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="990dp"
-            android:src="@mipmap/E2uRE"
+            android:src="@mipmap/e2ure"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -368,7 +368,7 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="1050dp"
-            android:src="@mipmap/E2uCE"
+            android:src="@mipmap/e2uce"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
