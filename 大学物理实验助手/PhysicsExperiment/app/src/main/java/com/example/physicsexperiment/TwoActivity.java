@@ -1,187 +1,29 @@
 package com.example.physicsexperiment;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Arrays;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class OneActivity extends AppCompatActivity {
-
-    static Database1 database11 = new Database1();
-    static Database1 database12 = new Database1();
-    static Database2 database2 = new Database2();
+public class TwoActivity extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button1 = findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                initDatas1();
-                initDatas12();
-                startActivity(new Intent(OneActivity.this,
-                        ResultOneActivity.class));
-            }
-        });
-
-        /*Button button2 = findViewById(R.id.button2);
+        Button button2 = findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 initDatas2();
-                startActivity(new Intent(OneActivity.this,
+                startActivity(new Intent(TwoActivity.this,
                         ResultTwoActivity.class));
             }
-        });*/
-        }
-
-    public void initDatas1(){
-            TextView textf = findViewById(R.id.E11f);
-            int f = Integer.parseInt(textf.getText().toString());
-            Integer F= new Integer(f);
-
-            //获取室温t
-            TextView textt = findViewById(R.id.E11t);
-            int t = Integer.parseInt(textt.getText().toString());
-            Integer T= new Integer(t);
-
-            //获取数据1
-            TextView text1 = findViewById(R.id.E11Xi1);
-            int xi1 = Integer.parseInt(text1.getText().toString());
-            Integer Xi1 = new Integer(xi1);
-
-            //2
-            TextView text2 = findViewById(R.id.E11Xi2);
-            int xi2 = Integer.parseInt(text2.getText().toString());
-            Integer Xi2 = new Integer(xi2);
-
-            //3
-            TextView text3 = findViewById(R.id.E11Xi3);
-            int xi3 = Integer.parseInt(text3.getText().toString());
-            Integer Xi3 = new Integer(xi3);
-
-            //4
-            TextView text4 = findViewById(R.id.E11Xi4);
-            int xi4 = Integer.parseInt(text4.getText().toString());
-            Integer Xi4 = new Integer(xi4);
-
-            //5
-            TextView text5 = findViewById(R.id.E11Xi5);
-            int xi5 = Integer.parseInt(text5.getText().toString());
-            Integer Xi5 = new Integer(xi5);
-
-            //6
-            TextView text6 = findViewById(R.id.E11Xi6);
-            int xi6 = Integer.parseInt(text6.getText().toString());
-            Integer Xi6 = new Integer(xi6);
-
-            //7
-            TextView text7 = findViewById(R.id.E11Xi7);
-            int xi7 = Integer.parseInt(text7.getText().toString());
-            Integer Xi7 = new Integer(xi7);
-
-            //8
-            TextView text8 = findViewById(R.id.E11Xi8);
-            int xi8 = Integer.parseInt(text8.getText().toString());
-            Integer Xi8 = new Integer(xi8);
-
-            //9
-            TextView text9 = findViewById(R.id.E11Xi9);
-            int xi9 = Integer.parseInt(text9.getText().toString());
-            Integer Xi9 = new Integer(xi9);
-
-            //10
-            TextView text10 = findViewById(R.id.E11Xi10);
-            int xi10 = Integer.parseInt(text10.getText().toString());
-            Integer Xi10 = new Integer(xi10);
-
-            Integer[] a = new Integer[]{Xi1,Xi2,Xi3,Xi4,Xi5,Xi6,Xi7,Xi8,Xi9,Xi10};
-
-
-
-            database11.setF(F);
-            database11.setT(T);
-            database11.setXi(Arrays.asList(a));
-            database11.dataProcess();
-        }
-
-    public void initDatas12(){
-        TextView textf = findViewById(R.id.E12f);
-        int f = Integer.parseInt(textf.getText().toString());
-        Integer F= new Integer(f);
-
-        //获取室温t
-        TextView textt = findViewById(R.id.E12t);
-        int t = Integer.parseInt(textt.getText().toString());
-        Integer T= new Integer(t);
-
-        //获取数据1
-        TextView text1 = findViewById(R.id.E12Xi1);
-        int xi1 = Integer.parseInt(text1.getText().toString());
-        Integer Xi1 = new Integer(xi1);
-
-        //2
-        TextView text2 = findViewById(R.id.E12Xi2);
-        int xi2 = Integer.parseInt(text2.getText().toString());
-        Integer Xi2 = new Integer(xi2);
-
-        //3
-        TextView text3 = findViewById(R.id.E12Xi3);
-        int xi3 = Integer.parseInt(text3.getText().toString());
-        Integer Xi3 = new Integer(xi3);
-
-        //4
-        TextView text4 = findViewById(R.id.E12Xi4);
-        int xi4 = Integer.parseInt(text4.getText().toString());
-        Integer Xi4 = new Integer(xi4);
-
-        //5
-        TextView text5 = findViewById(R.id.E12Xi5);
-        int xi5 = Integer.parseInt(text5.getText().toString());
-        Integer Xi5 = new Integer(xi5);
-
-        //6
-        TextView text6 = findViewById(R.id.E12Xi6);
-        int xi6 = Integer.parseInt(text6.getText().toString());
-        Integer Xi6 = new Integer(xi6);
-
-        //7
-        TextView text7 = findViewById(R.id.E12Xi7);
-        int xi7 = Integer.parseInt(text7.getText().toString());
-        Integer Xi7 = new Integer(xi7);
-
-        //8
-        TextView text8 = findViewById(R.id.E12Xi8);
-        int xi8 = Integer.parseInt(text8.getText().toString());
-        Integer Xi8 = new Integer(xi8);
-
-        //9
-        TextView text9 = findViewById(R.id.E12Xi9);
-        int xi9 = Integer.parseInt(text9.getText().toString());
-        Integer Xi9 = new Integer(xi9);
-
-        //10
-        TextView text10 = findViewById(R.id.E12Xi10);
-        int xi10 = Integer.parseInt(text10.getText().toString());
-        Integer Xi10 = new Integer(xi10);
-
-        Integer[] a = new Integer[]{Xi1,Xi2,Xi3,Xi4,Xi5,Xi6,Xi7,Xi8,Xi9,Xi10};
-
-
-
-        database12.setF(F);
-        database12.setT(T);
-        database12.setXi(Arrays.asList(a));
-        database12.dataProcess();
+        });
     }
 
     public void initDatas2(){
@@ -361,19 +203,13 @@ public class OneActivity extends AppCompatActivity {
         Double[] X1down = new Double[]{X1down1,X1down2,X1down3,X1down4,X1down5};
         Double[] b = new Double[]{b1,b2,b3,b4,b5};
 
-        database2.setAUp(aup);
-        database2.setADown(adown);
-        database2.setD(D);
-        database2.setX1(X1up);
-        database2.setX2(X1down);
-        database2.setB(b);
-        database2.setL(L);
-        database2.dataProcess();
+        OneActivity.database2.setAUp(aup);
+        OneActivity.database2.setADown(adown);
+        OneActivity.database2.setD(D);
+        OneActivity.database2.setX1(X1up);
+        OneActivity.database2.setX2(X1down);
+        OneActivity.database2.setB(b);
+        OneActivity.database2.setL(L);
+        OneActivity.database2.dataProcess();
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
 }
