@@ -7,14 +7,28 @@
     tools:context="com.example.activity.MainActivity">
 
 
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="239dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="200dp"
+        android:layout_weight="10"
+        android:hint="学号"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="118dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:text="Button1"
+        android:layout_marginTop="340dp"
+        android:text="查询"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -23,12 +37,12 @@
         android:id="@+id/et"
         android:layout_width="239dp"
         android:layout_height="45dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="272dp"
         android:layout_weight="10"
-        android:hint="请输入文件路径"
+        android:hint="密码"
+        android:inputType="textPassword"
         android:maxLines="1"
-        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
