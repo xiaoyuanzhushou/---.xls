@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">校园助手</string>
+
+    <string name="text_login_web_title">登录教务系统</string>
+    <string name="hint_student_id">学号</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_check_code">验证码</string>
+    <string name="toast_check_code_get_error">获取验证码失败</string>
+    <string name="text_login">登录</string>
+
+    <string name="text_node">节</string>
+    <string name="text_week">周</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="confirm">Confirm</string>
+    <string name="take_a_note">Take a note</string>
+    <string name="action_settings">设置</string>
+    <string name="action_debug">Debug</string>
+    <string name="action_database">Database</string>
+    <string name="action_TomatoClock">番茄钟</string>
+    <!-- button -->
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_resume">继续</string>
+    <string name="btn_stop">放弃</string>
+    <string name="btn_skip">略过</string>
+
+    <string name="scene_work">工作</string>
+    <string name="scene_short_break">短时休息</string>
+    <string name="scene_long_break">长时休息</string>
+
+    <string name="list_name">TODO</string>
+
+</resources>

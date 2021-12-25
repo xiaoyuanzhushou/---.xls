@@ -8,11 +8,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<include
-android:id="@+id/include"
-layout="@layout/experiment01"
-tools:layout_editor_absoluteX="0dp"
-tools:layout_editor_absoluteY="0dp" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/experiment01"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
